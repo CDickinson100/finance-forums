@@ -11,39 +11,35 @@ function Topic1Home() {
     return (
         <>
 
-            <BrowserRouter>
-                <Link to="/topic">
-                    <div class="topicList1">
+            <div class="topicList1">
 
-                        <div class="leftBox1">
-                            <div id="pensionTitle">
-                                <h3>Pensions</h3>
-                            </div>
-
-                            <div id="pensionDescription">
-                                {text}
-                                {<br />}
-                                {text2}
-                                {<br />}
-                                {text3}
-                                {<br />}
-                                {text4}
-                            </div>
-                        </div>
-
-                        <div id="rightBox1">
-                            <div id="pensionDate">
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <text id="date">April 14, 2020</text>
-                            </div>
-                        </div>
-
+                <div class="leftBox1">
+                    <div id="pensionTitle">
+                        <h3>Pensions</h3>
                     </div>
-                </Link>
-            </BrowserRouter>
+
+                    <div id="pensionDescription">
+                        {text}
+                        {<br />}
+                        {text2}
+                        {<br />}
+                        {text3}
+                        {<br />}
+                        {text4}
+                    </div>
+                </div>
+
+                <div id="rightBox1">
+                    <div id="pensionDate">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <text id="date">April 14, 2020</text>
+                    </div>
+                </div>
+
+            </div>
 
         </>
     )

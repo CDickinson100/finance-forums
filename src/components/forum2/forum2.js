@@ -7,28 +7,24 @@ function Forum2Home() {
     return (
         <>
 
-            <BrowserRouter>
-                <Link to="/topic">
-                    <div class="topicList4">
+            <div class="topicList4">
 
-                        <div class="leftBox4">
-                            <div id="forum2Title">
-                                <h3> Student Loan Problems </h3>
-                            </div>
-                        </div>
-
-                        <div id="rightBox4">
-                            <div id="forum2Date">
-                                <br />
-                                <text id="date2">
-                                    12hrs ago
-                                </text>
-                            </div>
-                        </div>
-
+                <div class="leftBox4">
+                    <div id="forum2Title">
+                        <h3> Student Loan Problems </h3>
                     </div>
-                </Link>
-            </BrowserRouter>
+                </div>
+
+                <div id="rightBox4">
+                    <div id="forum2Date">
+                        <br />
+                        <text id="date2">
+                            12hrs ago
+                        </text>
+                    </div>
+                </div>
+
+            </div>
 
         </>
     )
