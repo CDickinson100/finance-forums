@@ -3,17 +3,17 @@ import './menu-sections.css';
 import { BrowserRouter, Link } from 'react-router-dom';
 
 function MenuSections() {
-    const [activeMenu, setActiveMenu] = useState();
+    const [activeMenu, setActiveMenu] = useState(0);
     return (
         <>
             <BrowserRouter>
                 <div class="menuFrame">
                     <div>
-                        <Link to="">
+                        <a href="">
                             <button onClick={() => setActiveMenu(0)} class={activeMenu === 0 ? 'active-section' : 'section'}>
                                 <h1>Home</h1>
                             </button>
-                        </Link>
+                        </a>
                     </div>
 
                     <div>
@@ -24,22 +24,21 @@ function MenuSections() {
                         </a>
                     </div>
 
-                    <div class="section">
-                        <Link to="/topics">
+                    <div>
+                        <a href="/topics">
                             <button  onClick={() => setActiveMenu(2)} class={activeMenu === 2 ? 'active-section' : 'section'}>
                                 <h1>Articles</h1>
                             </button>
-                        </Link>
+                        </a>
                     </div>
 
-                    <div class="section">
-                        <Link to="/support">
+                    <div>
+                        <a href="/support">
                             <button  onClick={() => setActiveMenu(3)} class={activeMenu === 3 ? 'active-section' : 'section'}>
                                 <h1>Support</h1>
                             </button>
-                        </Link>
+                        </a>
                     </div>
-
                 </div>
             </BrowserRouter>
         </>
