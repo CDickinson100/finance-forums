@@ -20,9 +20,8 @@
   margin: 2.5%;
 }
 
-.news {
+.side {
   display: flex;
-  border: 1px black solid;
   float: right;
   width: 25%;
   min-height: 600px;
