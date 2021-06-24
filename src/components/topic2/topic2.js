@@ -31,7 +31,11 @@ function Topic2Home() {
 
                         <div id="rightBox2">
                             <div id="riskDate">
-                                <h4>Date</h4>
+                                <text id="date">
+                                    <br />
+                                    <br />
+                                    <br />
+                                </text>
                             </div>
                         </div>
 
