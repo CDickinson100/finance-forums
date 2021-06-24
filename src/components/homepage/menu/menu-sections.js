@@ -9,7 +9,7 @@ function MenuSections() {
                 <div class="menuFrame">
                     <div class="topSection">
                         <Link to="">
-                            <button id="home">
+                            <button id="menuButton">
                                 <h1> Home </h1>
                             </button>
                         </Link>
@@ -17,7 +17,7 @@ function MenuSections() {
 
                     <div class="section">
                         <Link to="">
-                            <button id="home">
+                            <button id="menuButton">
                                 <h1> Topics </h1>
                             </button>
                         </Link>
@@ -25,7 +25,7 @@ function MenuSections() {
 
                     <div class="section">
                         <Link to="">
-                            <button id="home">
+                            <button id="menuButton">
                                 <h1> Forum </h1>
                             </button>
                         </Link>
@@ -33,7 +33,7 @@ function MenuSections() {
 
                     <div class="section">
                         <Link to="">
-                            <button id="home">
+                            <button id="menuButton">
                                 <h1> Support </h1>
                             </button>
                         </Link>
