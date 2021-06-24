@@ -1,28 +1,45 @@
 import React, { useState } from 'react';
 import './menu-sections.css';
-import { BrowserRouter, Link } from 'react-router-dom'
+import { BrowserRouter, Link } from 'react-router-dom';
 
 function MenuSections() {
-    //const [activeMenu, setActiveMenu] = useState(0);
+    const [activeMenu, setActiveMenu] = useState();
     return (
         <>
             <BrowserRouter>
                 <div class="menuFrame">
-                    <div class={'section'}>
+                    <div>
                         <Link to="">
-                            <button id="menuButton">
+                            <button onClick={() => setActiveMenu(0)} class={activeMenu === 0 ? 'active-section' : 'section'}>
                                 <h1>Home</h1>
                             </button>
                         </Link>
                     </div>
 
-                    <div class={'section'}>
+                    <div>
                         <a href="/categories">
-                            <button id="menuButton">
+                            <button onClick={() => setActiveMenu(1)} class={activeMenu === 1 ? 'active-section' : 'section'}>
                                 <h1>Categories</h1>
                             </button>
                         </a>
                     </div>
+
+                    <div class="section">
+                        <Link to="/topics">
+                            <button  onClick={() => setActiveMenu(2)} class={activeMenu === 2 ? 'active-section' : 'section'}>
+                                <h1>Articles</h1>
+                            </button>
+                        </Link>
+                    </div>
+
+                    <div class="section">
+                        <Link to="/support">
+                            <button  onClick={() => setActiveMenu(3)} class={activeMenu === 3 ? 'active-section' : 'section'}>
+                                <h1>Support</h1>
+                            </button>
+                        </Link>
+                    </div>
+
                 </div>
             </BrowserRouter>
         </>
