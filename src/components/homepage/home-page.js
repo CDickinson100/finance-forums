@@ -3,6 +3,8 @@ import "./home-page.css"
 import MenuSections from "./menu/menu-sections";
 import Topic1Home from "../topic1/topic1-home";
 import Topic2Home from "../topic2/topic2";
+import Forum1Home from "../forum1/forum1";
+import Forum2Home from "../forum2/forum2";
 
 function HomeUI() {
     return (
@@ -26,7 +28,8 @@ function HomeUI() {
                             <h2>Popular Forums</h2>
                         </div>
 
-                        <Section />
+                        <Forum1Home />
+                        <Forum2Home />
 
                     </div>
 
