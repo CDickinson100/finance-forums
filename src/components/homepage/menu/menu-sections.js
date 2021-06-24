@@ -16,7 +16,7 @@ function MenuSections() {
                     </div>
 
                     <div class="section">
-                        <Link to="">
+                        <Link to="/topics">
                             <button id="menuButton">
                                 <h1> Topics </h1>
                             </button>
@@ -24,7 +24,7 @@ function MenuSections() {
                     </div>
 
                     <div class="section">
-                        <Link to="">
+                        <Link to="/forums">
                             <button id="menuButton">
                                 <h1> Forum </h1>
                             </button>
@@ -32,7 +32,7 @@ function MenuSections() {
                     </div>
 
                     <div class="section">
-                        <Link to="">
+                        <Link to="/support">
                             <button id="menuButton">
                                 <h1> Support </h1>
                             </button>
