@@ -52,6 +52,18 @@ app.get('/getThreads', async function (request, response) {
 });
 
 /**
+ * Get thread info from thread id
+ */
+app.get('/getThread', async function (request, response) {
+    let threadID = request.query.id;
+    connection.query(`SELECT * from threads where id = ` + threadID,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+});
+
+/**
  * Creates a thread with a title content and category
  */
 app.get('/createThread', async function (request, response) {
