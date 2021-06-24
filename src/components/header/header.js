@@ -1,9 +1,30 @@
 import bellIcon from '../../icons/bell.svg';
 
-import { BrowserRouter, Link } from "react-router-dom";
 import "./header.css";
+import {useState} from "react";
 
-function Header() {
+export default function Header() {
+
+    const token = "1xq2fjn6ih3lbww9ofb85r";
+
+    const [user, setUser] = useState(null);
+
+    async function getDetails() {
+        const requestOptions = {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                'token': token
+            })
+        };
+
+        const response = await fetch('/getUserDetails', requestOptions);
+        const body = await response.json();
+        setUser(body[0]);
+    }
+
+    getDetails();
+
     return (
         <>
             <div class="header">
@@ -13,25 +34,26 @@ function Header() {
                 </div>
 
                 <div class="searchbar">
-                    <input type="search" id="search" name="search" placeholder="Search for Topics" />
+                    <input type="search" id="search" name="search" placeholder="Search for Topics"/>
                 </div>
 
                 <div class="notification">
-                    <img src={bellIcon} alt="" />
+                    <img src={bellIcon} alt=""/>
                 </div>
-
-                <div class="profile">
-                    <BrowserRouter>
-                        <Link to="/">
+                {
+                    user ?
+                        <div className="profile">
                             <button id="profileButton">
-                                Profile
+                                <img src={user.avatar}/>
                             </button>
-                        </Link>
-                    </BrowserRouter>
-                </div>
+                        </div>
+                        :
+                        <>
+                            <a href="/login">Login</a>
+                            <a href="/register">Register</a>
+                        </>
+                }
             </div>
         </>
     )
 }
-
-export default Header;
