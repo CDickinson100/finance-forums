@@ -36,7 +36,9 @@ export default function Header() {
                 <div class="title">
 
                     <div class="logo">
-                        <img class="inline" src={iress} alt="" />
+                        <a href="/">
+                            <img class="inline" src={iress} alt="" />
+                        </a>
                     </div>
                     <div class="logo" >
                         <h1 class="inline" id="name"><a href="/">Thrift</a></h1>
