@@ -49,16 +49,22 @@ export default function Login() {
         <div className="login">
 
             <br></br>
+            <div className="form">
             <img id="icon" src={defaultAvatar} alt="Avatar"/>
             <br></br>
-            <label htmlFor="email"><b>Email</b></label>
-            <input type="text" onChange={changeAvatar} placeholder="Enter Email" id="email" name="email" required/>
+            <br></br>
 
+            <label htmlFor="email"><b>Email</b></label>
+            <br></br>
+            <input type="text" onChange={changeAvatar} placeholder="Enter Email" id="email" name="email" required/>
+            <br></br>
             <label htmlFor="password"><b>Password</b></label>
+            <br></br>
             <input type="password" placeholder="Enter Password" id="password" name="password" required/>
+        </div>
 
             <p id="incorrect"/>
-            <button type="submit" onClick={login}>Login</button>
+            <button className="loginButton" type="submit" onClick={login}>Login</button>
         </div>
     )
 }
