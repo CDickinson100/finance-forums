@@ -1,4 +1,37 @@
-#sections {
+.topicList {
+    display: flex;
+    position: relative;
     border-style: solid;
     color: black;
+    margin: 2.5%;
+    min-height: 20%;
+    width: 95%;
+}
+
+#title {
+    position: relative;
+    border: solid;
+    float: left;
+    clear: left;
+    color: black;
+    float: left;
+    height: 40px;
+    width: 25%;
+}
+
+#description {
+    position: relative;
+    float: left;
+    clear: left;
+    border: solid;
+    color: black;
+    height: 40px;
+    width: 75%;
+}
+
+#date {
+    position: relative;
+    border: solid;
+    color: black;
+    width: 20%;
 }

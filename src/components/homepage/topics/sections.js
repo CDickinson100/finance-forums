@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
-import "./sections.css"
+import "./sections.css";
 
 function Section() {
     return (
@@ -8,18 +8,18 @@ function Section() {
 
             <BrowserRouter>
                 <Link to="/topic">
-                    <div id="section">
+                    <div class="topicList">
 
                         <div id="title">
-
+                            <h3>Title</h3>
                         </div>
 
                         <div id="description">
-
+                            <h4>Description</h4>
                         </div>
 
                         <div id="date">
-
+                            <h4>Date</h4>
                         </div>
 
                     </div>
