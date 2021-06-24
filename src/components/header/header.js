@@ -33,7 +33,7 @@ export default function Header() {
             <div class="header">
 
                 <div class="title">
-                    <h1 id="name"><a href="/localhost:3000">Thrift</a></h1>
+                    <h1 id="name"><a href="/">Thrift</a></h1>
                 </div>
 
                 <div class="searchbar">
