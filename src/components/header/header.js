@@ -1,7 +1,7 @@
 import bellIcon from '../../icons/bell.svg';
 
 import { BrowserRouter, Link } from "react-router-dom";
-import "./header.css"
+import "./header.css";
 
 function Header() {
     return (

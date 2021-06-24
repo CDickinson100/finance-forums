@@ -11,7 +11,13 @@ function HomeUI() {
                 </div>
 
                 <div class="topics">
-                    <Section />
+                    <div class="sectionList">
+                        <Section />
+                        <Section />
+                        <Section />
+                        <Section />
+
+                    </div>
 
                 </div>
 

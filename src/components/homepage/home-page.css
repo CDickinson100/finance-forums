@@ -13,6 +13,7 @@
 
 .topics {
   display: flex;
+  position: relative;
   border: 1px black solid;
   float: right;
   width: 57.5%;
@@ -27,4 +28,10 @@
   width: 25%;
   min-height: 600px;
   margin: 2.5%;
+}
+
+.sectionList {
+  border-style: solid;
+  color: black;
+  width: 100%;
 }

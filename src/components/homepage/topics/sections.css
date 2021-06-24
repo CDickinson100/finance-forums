@@ -1,4 +1,57 @@
-#sections {
+.topicList {
+    display: flex;
+    position: relative;
     border-style: solid;
     color: black;
+    margin: 2.5%;
+    min-height: 20%;
+    width: 95%;
+}
+
+.dataBox {
+    display: flex;
+    position: relative;
+    float: right;
+    border-style: solid;
+    color: black;
+    min-height: 100%;
+    width: 25%;
+}
+
+.left {
+    display: block;
+    position: relative;
+    border-style: solid;
+    color: black;
+    min-height: 100%;
+    width: 75%;
+}
+
+#title {
+    position: relative;
+    border: solid;
+    float: left;
+    clear: left;
+    color: black;
+    float: left;
+    height: 40px;
+    width: 100%;
+}
+
+#description {
+    position: relative;
+    float: left;
+    clear: left;
+    border: solid;
+    color: black;
+    height: 55%;
+    width: 100%;
+}
+
+#date {
+    position: relative;
+    border: solid;
+    color: black;
+    width: 100%;
+    height: 100%;
 }
