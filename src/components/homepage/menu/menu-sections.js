@@ -3,7 +3,7 @@ import './menu-sections.css';
 import { BrowserRouter, Link } from 'react-router-dom';
 
 function MenuSections() {
-    const [activeMenu, setActiveMenu] = useState();
+    const [activeMenu, setActiveMenu] = useState(0);
     return (
         <>
             <BrowserRouter>
