@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import Category from "../category/Category";
+import './Categories.css'
 
 export default function Categories() {
 
@@ -26,7 +26,9 @@ export default function Categories() {
                     categories.filter(value => {
                         return value.category_name !== "news";
                     }).map((value) => {
-                        return <Category name={value.category_name}/>
+                        return <div className="category">
+                            <a href={"/threadList/" + value.id}><h1>{value.category_name}</h1></a>
+                        </div>
                     })
                 }
             </center>

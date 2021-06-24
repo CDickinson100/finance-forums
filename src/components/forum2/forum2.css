@@ -1,7 +1,5 @@
 .topicList4 {
     display: flex;
-    border: solid;
-    color: black;
     position: relative;
     margin: 2.5%;
     min-height: 10%;
@@ -36,7 +34,8 @@
 #forum2Date {
     position: relative;
     float: right;
-    width: 100%;
+    text-align: center;
+    width: 150px;
     height: 100%;
 }
 
