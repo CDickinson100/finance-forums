@@ -1,5 +1,4 @@
 import bellIcon from '../../icons/bell.svg';
-
 import "./header.css";
 import {useState} from "react";
 

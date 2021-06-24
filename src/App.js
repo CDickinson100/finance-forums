@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route path="/forums" component={ForumsHome} />
           <Route path="/register" component={Register} />
-          <Route path="/login" render={(props) => <Login {...props} />}/>
+          <Route path="/login" component={Login}/>
           <Route exact path="" component={HomeUI}/>
         </Switch>
       </BrowserRouter>
