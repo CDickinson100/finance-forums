@@ -10,7 +10,7 @@ function Header() {
                 </div>
 
                 <div class="searchbar">
-
+                    <input type="search" id="search" name="search" placeholder="Search for Topics" />
                 </div>
 
                 <div class="notification">
