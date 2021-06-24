@@ -39,13 +39,25 @@ app.post('/registerUser', async function (request, response) {
         });
 });
 
+app.post('/createThread', async function (request, response) {
+    let token = request.body.token;
+    let id = loginTokens[token];
+    let title = request.body.title;
+    let content = request.body.content;
+    connection.query(`INSERT into threads (author, title, content, date) VALUES("` + id + `", "` + title + `", "` + content + `", "` + new Date() + `")`,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+});
+
 /**
  * Gets user account details from a token
  */
 app.get('/getAccountDetails', async function (request, response) {
     let token = request.query.token;
-    let email = loginTokens[token];
-    connection.query(`SELECT * FROM users where email = "` + email + `"`,
+    let id = loginTokens[token];
+    connection.query(`SELECT * FROM users where id = ` + id,
         (error, results) => {
             if (error) console.log(error);
             response.status(200).json(results);
@@ -75,7 +87,7 @@ app.get('/login', async function (request, response) {
             if (error) console.log(error);
             const auth = bcrypt.compareSync(password, results[0].password);
             response.status(200).json({
-                token: auth ? getToken(email) : "",
+                token: auth ? getToken(results[0].id) : "",
                 message: auth ? "" : "Incorrect Password"
             });
         });
@@ -92,9 +104,9 @@ app.get('/getCategories', async function (request, response) {
         });
 });
 
-function getToken(name) {
+function getToken(id) {
     const token = Math.random().toString(36).substr(2) + Math.random().toString(36).substr(2);
-    loginTokens[token] = name;
+    loginTokens[token] = id;
     return token;
 }
 
@@ -116,7 +128,7 @@ function createTables() {
         "id INT auto_increment," +
         "author INT," +
         "title VARCHAR(255)," +
-        "date DATETIME," +
+        "date VARCHAR(255)," +
         "content LONGTEXT," +
         "primary key (id)" +
         ");"
