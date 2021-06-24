@@ -189,23 +189,15 @@ app.get('/createThread', async function (request, response) {
 });
 
 /**
- * Gets user account details from a token
- */
-app.get('/getAccountDetails', async function (request, response) {
-    let token = request.query.token;
-    let id = loginTokens[token];
-    connection.query(`SELECT * FROM users where id = ` + id,
-        (error, results) => {
-            if (error) console.log(error);
-            response.status(200).json(results);
-        });
-})
-
-/**
  * Gets user details from an id
  */
 app.get('/getUserDetails', async function (request, response) {
     let id = request.query.id;
+    if (!id) {
+        let token = request.query.token;
+        id = loginTokens[token];
+    }
+
     connection.query(`SELECT * FROM users where id = ` + id,
         (error, results) => {
             if (error) console.log(error);
