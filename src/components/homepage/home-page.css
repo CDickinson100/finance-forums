@@ -7,8 +7,9 @@
 .menu {
     display: flex;
     border: 1px black solid;
-    width: 20%;
-    min-height: 650px;
+    width: 22.5%;
+    min-height: 600px;
+    margin: 2.5%;
 }
 
 .topics {
@@ -16,7 +17,8 @@
     border: 1px black solid;
     float: right;
     width: 45%;
-    min-height: 650px;
+    min-height: 600px;
+    margin: 2.5%;
 }
 
 .news {
@@ -24,5 +26,6 @@
     border: 1px black solid;
     float: right;
     width: 25%;
-    min-height: 650px;
+    min-height: 600px;
+    margin: 2.5%;
 }
