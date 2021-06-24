@@ -38,7 +38,7 @@ export default function Header() {
                     <input type="search" id="search" name="search" placeholder="Search for Topics"/>
                 </div>
 
-                <div class="notification">
+                <div class={ user ? "notification" : "other-notification"}>
                     <img src={bellIcon} alt=""/>
                 </div>
                 {
