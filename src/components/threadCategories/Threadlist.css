@@ -9,7 +9,7 @@
   text-decoration-line: none;
 }
 
-.Threads button{
+.Threads button {
   background-color: #04aa6d;
   color: white;
   padding: 14px 20px;
@@ -22,4 +22,12 @@
 
 .name {
   padding-top: 9px;
+}
+
+.buttonCreate {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }

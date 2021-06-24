@@ -27,11 +27,14 @@ export default function ThreadList(props) {
 
     return (
         <div className="Threads">
+        <div className="buttonCreate">
             {localStorage.token &&
             <button onClick={() => window.location = "/create"}>
                 Create Thread
             </button>
             }
+            </div>
+            
             <center>
                 {
                     threads.map((value) => {
