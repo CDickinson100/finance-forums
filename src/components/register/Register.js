@@ -29,6 +29,8 @@ export default function Register() {
 
     return (
         <div className="register">
+        <br></br>
+        <div className="form">
             <label htmlFor="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" id="email" name="email" required/>
 
@@ -40,6 +42,7 @@ export default function Register() {
 
             <label htmlFor="password"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" id="password" name="password" required/>
+            </div>
 
             <p id="incorrect"/>
             <button type="submit" onClick={create}>Create Account</button>
