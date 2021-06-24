@@ -1,8 +1,8 @@
-.comments{
+.comments {
     text-align: center;
 }
 
-.comments button{
+.comments button {
     background-color: #04aa6d;
     color: white;
     padding: 14px 20px;
@@ -11,4 +11,22 @@
     width: 150px;
     border-radius: 6px;
     margin: 8px 0 8px 10px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-author {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-author img {
+    width: 80px;
+}
+
+.comment-author h1 {
+    font-size: 20px;
 }
