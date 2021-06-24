@@ -3,10 +3,48 @@
   width: 20%;
 }
 
+.title {
+  border-style: solid;
+  color: black;
+  height: 100%;
+  width: 20%;
+}
+
+#name {
+  width: 50%;
+  margin-left: 5%;
+}
+
 .header {
-    border-style: solid;
-    color:black;
-    margin-top: 2.5%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+  display: flex;
+  border-style: solid;
+  color:black;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.searchbar {
+  display: flex;
+  border-style: solid;
+  color: black;
+  display: flex;
+  width: 25%;  
+  height: 100%;
+  margin: auto;
+}
+
+.profile {
+  display: flex;
+  float: right;
+  border-style: solid;
+  color: black;
+  height: 100%;
+}
+
+#profileButton {
+  display: flex;
+  float: right;
+  width: 150px;
+  height: 100%;
 }

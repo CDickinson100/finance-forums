@@ -1,7 +1,8 @@
 import './fonts/fonts.css';
 import Header from './components/header/header';
 import HomeUI from './components/homepage/home-page';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import ForumsHome from './components/forums/forums-homepage';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="" component={HomeUI} />
-          <Route path="/forums" component={Forums} />
+          <Route path="/forums" component={ForumsHome} />
         </Switch>
       </BrowserRouter>
 
