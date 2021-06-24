@@ -1,4 +1,5 @@
 import bellIcon from '../../icons/bell.svg';
+import iress from '../../icons/iress.jpg';
 import "./header.css";
 import {useEffect, useState} from "react";
 
@@ -33,6 +34,7 @@ export default function Header() {
             <div class="header">
 
                 <div class="title">
+                    <img src={iress} alt=""/>
                     <h1 id="name"><a href="/">Thrift</a></h1>
                 </div>
 
