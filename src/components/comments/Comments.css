@@ -21,6 +21,7 @@
 .comment-author {
     display: flex;
     flex-direction: column;
+    margin-right: 25px;
 }
 
 .comment-author img {
