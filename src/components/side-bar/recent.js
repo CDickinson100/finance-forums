@@ -13,7 +13,7 @@ function RecentlyViewed() {
                     </div>
 
                     <div class="option">
-                        <text>Everything you need to know about Mortgages</text>
+
                     </div>
 
                 </div>
