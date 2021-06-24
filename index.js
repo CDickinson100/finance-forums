@@ -230,6 +230,21 @@ app.get('/login', async function (request, response) {
         });
 });
 
+
+/**
+ * Change a user's avatar
+ */
+app.post('/setAvatar', async function (request, response) {
+    let token = request.body.token;
+    let avatar = request.body.avatar;
+    let userID = loginTokens[token];
+    connection.query(`UPDATE users SET avatar = "` + avatar + `" WHERE id = ` + userID,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+});
+
 /**
  * Gets all categories return in json format
  */
