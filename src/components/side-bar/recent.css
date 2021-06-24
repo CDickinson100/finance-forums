@@ -1,58 +1,61 @@
 .sidebar {
-    display: flex;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 #sideBarTitle {
-    display: block;
-    width: 100%;
-    height: 5%;
-    margin: 2.5%;
+  display: block;
+  width: 100%;
+  height: 5%;
+  margin: 2.5%;
 }
 
 #sideTitle {
-    margin-left: 2.5%;
+  margin-left: 2.5%;
 }
 
 .option {
-    width: 90%;
-    height: 10%;
-    text-align: left;
-    margin-left: 5%;
+  width: 90%;
+  height: 10%;
+  text-align: left;
+  margin-left: 5%;
 }
 
 .option1 {
-    width: 100px;
+  width: 100px;
 }
 
 #options {
-    width: 100%;
-    height: 70%;
+  width: 100%;
+  height: 70%;
 }
 
 .extraOptions {
-    display: flex;
-    float: right;
-    width: 100%;
+  display: flex;
+  float: right;
+  position: absolute;
+  bottom: 20px;
 }
 
 .lane1 {
-    position: relative;
-    display: flex;
-    float: right;
-    width: 25%;
-    margin: auto;
+  position: relative;
+  display: flex;
+  float: right;
+  width: 25%;
+  margin: auto;
+  padding-left: 75px;
 }
 
 .lane2 {
-    position: relative;
-    display: flex;
-    width: 35%;
-    margin: 0 auto;
+  position: relative;
+  display: flex;
+  width: 35%;
+  margin: 0 auto;
+  padding-left: 60px;
 }
 
 .sidebarText {
-    font-size: 14px;
-    color: grey;
+  font-size: 14px;
+  color: grey;
 }

@@ -34,13 +34,8 @@ export default function Header() {
             <div class="header">
 
                 <div class="title">
-                    <div class="logo">
-                        <img class="inline" src={iress} alt="" />
-                    </div>
-
-                    <div class="logo" >
-                        <h1 class="inline" id="name"><a href="/">Thrift</a></h1>
-                    </div>
+                    <img src={iress} alt="" />
+                    <h1 id="name"><a href="/">Thrift</a></h1>
                 </div>
 
                 <div class="searchbar">
@@ -53,12 +48,12 @@ export default function Header() {
                 {
                     user ?
                         <>
-                            <button onClick={() => setMenu(!menu)}>
-                                <div class="profile">
+                            <div className="profile">
+                                <button onClick={() => setMenu(!menu)}>
                                     <img src={user.avatar} alt="avatar" />
-                                </div>
-                            </button>
-                            {menu && <div className="menu">
+                                </button>
+                            </div>
+                            {menu && <div className="logout-menu">
                                 <button onClick={() => {
                                     localStorage.removeItem("token");
                                     window.location = "/";
