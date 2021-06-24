@@ -1,7 +1,5 @@
 .topicList3 {
     display: flex;
-    border: solid;
-    color: black;
     position: relative;
     margin: 2.5%;
     min-height: 10%;
@@ -10,8 +8,6 @@
 
 .rightBox3 {
     display: flex;
-    border: solid;
-    color: black;
     position: relative;
     float: right;
     height: 95%;
