@@ -33,15 +33,17 @@ export default function Header() {
         <>
             <div class="header">
 
-                <div class="title">
+                <a href="/">
+                    <div class="title">
 
-                    <div class="logo">
-                        <a href="/">
+                        <div class="logo">
+
                             <img class="inline" src={iress} alt="" />
-                        </a>
+
+                        </div>
+                        <h1>Thrift</h1>
                     </div>
-                    <h1>Thrift</h1>
-                </div>
+                </a>
 
                 <div class="searchbar">
                     <input type="search" id="search" name="search" placeholder="Search for Topics" />
