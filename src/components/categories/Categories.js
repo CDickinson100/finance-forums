@@ -27,7 +27,7 @@ export default function Categories() {
                         return value.category_name !== "news";
                     }).map((value) => {
                         return <div className="category">
-                            <h1>{value.category_name}</h1>
+                            <a href={"/threadList/" + value.id}><h1>{value.category_name}</h1></a>
                         </div>
                     })
                 }
