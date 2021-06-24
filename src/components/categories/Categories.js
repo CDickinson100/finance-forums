@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './Categories.css'
 
 export default function Categories() {
@@ -8,7 +8,7 @@ export default function Categories() {
     async function getCategories() {
         const requestOptions = {
             method: 'POST',
-            headers: {'Content-Type': 'application/json'}
+            headers: { 'Content-Type': 'application/json' }
         };
         const response = await fetch('/getCategories', requestOptions);
         const body = await response.json();
@@ -20,18 +20,20 @@ export default function Categories() {
     }, [])
 
     return (
-        <div className="Categories">
-            <center>
-                {
-                    categories.filter(value => {
-                        return value.category_name !== "news";
-                    }).map((value) => {
-                        return <div className="category">
-                            <a href={"/threadList/" + value.id}><h1 className="name">{value.category_name}</h1></a>
-                        </div>
-                    })
-                }
-            </center>
-        </div>
+        <>
+            {
+                categories.filter(value => {
+                    return value.category_name !== "news";
+                }).map((value) => {
+                    return <div>
+                        <a href={"/threadList/" + value.id}>
+                            <button class={'section'}>
+                                <h1>{value.category_name}</h1>
+                            </button>
+                        </a>
+                    </div>
+                })
+            }
+        </>
     )
 }

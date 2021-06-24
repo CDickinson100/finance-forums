@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './menu-sections.css';
 import { BrowserRouter } from 'react-router-dom';
+import Categories from '../../categories/Categories';
 
 function MenuSections() {
     const [activeMenu, setActiveMenu] = useState(0);
+    const [showCategories, setShow] = useState(false);
     return (
         <>
             <BrowserRouter>
@@ -17,12 +19,16 @@ function MenuSections() {
                     </div>
 
                     <div>
-                        <a href="/categories">
-                            <button onClick={() => setActiveMenu(1)} class={activeMenu === 1 ? 'active-section' : 'section'}>
+                        <a>
+                            <button onClick={() => { setActiveMenu(1); setShow(!showCategories) }} class={activeMenu === 1 ? 'active-section' : 'section'}>
                                 <h1>Categories</h1>
                             </button>
                         </a>
                     </div>
+
+                    {showCategories ?
+                        <Categories />
+                        : <></>}
 
                     <div>
                         <a href="/topics">
