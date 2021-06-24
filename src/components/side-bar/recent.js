@@ -45,6 +45,8 @@ function RecentlyViewed() {
                     <br />
                     <br />
                     <br />
+                    <br />
+                    <br />
 
                     <div class="extraOptions">
                         <div class="lane1">
