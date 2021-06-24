@@ -9,6 +9,17 @@
   text-decoration-line: none;
 }
 
+.Threads button{
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 6px;
+}
+
 .name {
   padding-top: 9px;
 }
