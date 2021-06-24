@@ -11,42 +11,38 @@ function Topic2Home() {
     return (
         <>
 
-            <BrowserRouter>
-                <Link to="/topic">
-                    <div class="topicList2">
+            <div class="topicList2">
 
-                        <div class="leftBox2">
-                            <div id="riskTitle">
-                                <h3>Risk Management in Finance</h3>
-                            </div>
-
-                            <div id="riskDescription">
-                                {text}
-                                {<br />}
-                                {text2}
-                                {<br />}
-                                {text3}
-                            </div>
-                        </div>
-
-                        <div id="rightBox2">
-                            <div id="riskDate">
-                                <text id="date">
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    Jan 3, 2018
-                                    <br />
-                                    <br />
-                                    <br />
-                                </text>
-                            </div>
-                        </div>
-
+                <div class="leftBox2">
+                    <div id="riskTitle">
+                        <h3>Risk Management in Finance</h3>
                     </div>
-                </Link>
-            </BrowserRouter>
+
+                    <div id="riskDescription">
+                        {text}
+                        {<br />}
+                        {text2}
+                        {<br />}
+                        {text3}
+                    </div>
+                </div>
+
+                <div id="rightBox2">
+                    <div id="riskDate">
+                        <text id="date">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            Jan 3, 2018
+                            <br />
+                            <br />
+                            <br />
+                        </text>
+                    </div>
+                </div>
+
+            </div>
 
         </>
     )

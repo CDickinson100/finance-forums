@@ -9,28 +9,24 @@ function Forum1Home() {
     return (
         <>
 
-            <BrowserRouter>
-                <Link to="/topic">
-                    <div class="topicList3">
+            <div class="topicList3">
 
-                        <div class="leftBox3">
-                            <div id="forumTitle">
-                                <h3> Buying my first car </h3>
-                            </div>
-                        </div>
-
-                        <div id="rightBox3">
-                            <div id="forumDate">
-                                <br />
-                                <text id="middle">
-                                    18hrs ago
-                                </text>
-                            </div>
-                        </div>
-
+                <div class="leftBox3">
+                    <div id="forumTitle">
+                        <h3> Buying my first car </h3>
                     </div>
-                </Link>
-            </BrowserRouter>
+                </div>
+
+                <div id="rightBox3">
+                    <div id="forumDate">
+                        <br />
+                        <text id="middle">
+                            18hrs ago
+                        </text>
+                    </div>
+                </div>
+
+            </div>
 
         </>
     )
