@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import "./home-page.css"
 import MenuSections from "./menu/menu-sections";
 import ReactMarkdown from "react-markdown";
@@ -11,7 +11,7 @@ export default function HomeUI() {
     async function getThreads() {
         const requestOptions = {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
                 'category': 1
             })
@@ -29,18 +29,16 @@ export default function HomeUI() {
         <>
             <div class="home">
                 <div class="menu">
-                    <MenuSections />
+                    <MenuSections/>
                 </div>
 
                 <div class="topics">
                     <center>
                         {
                             threads.map((value) => {
-                                return <div className="thread">
-                                    <div id="thread">
-                                        <h1>{value.title}</h1>
-                                        <ReactMarkdown>{value.content}</ReactMarkdown>
-                                    </div>
+                                return <div id="thread">
+                                    <h1>{value.title}</h1>
+                                    <ReactMarkdown>{value.content}</ReactMarkdown>
                                 </div>
                             })
                         }
@@ -48,8 +46,8 @@ export default function HomeUI() {
                 </div>
 
                 <div class="side">
-                    <div id="recent" >
-                        <RecentlyViewed />
+                    <div id="recent">
+                        <RecentlyViewed/>
                     </div>
                 </div>
             </div>
