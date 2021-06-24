@@ -6,7 +6,7 @@ function Header() {
         <>
             <div class="header">
                 <div class="title">
-                    <h1 id="title"> Title </h1>
+                    <h1 id="name"> Title </h1>
                 </div>
 
                 <div class="searchbar">
