@@ -77,8 +77,8 @@ input[type="search"]::-webkit-search-results-decoration {
   transform: translateY(50%);
 }
 
-.profile button,
-.profile button:focus {
+.profile img,
+.profile img:focus {
   width: 40px;
   height: 40px;
   border-radius: 25px;
@@ -96,13 +96,15 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .profileActions a {
   text-decoration: none;
-  color: hsl(158, 91%, 55%);
+  color: black;
 }
 
 .loginButton {
   margin-right: 11px;
+  color: hsl(158, 91%, 55%) !important;
 }
 
 .registerButton {
   margin-left: 11px;
+  color: hsl(158, 91%, 55%) !important;
 }

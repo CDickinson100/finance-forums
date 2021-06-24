@@ -31,22 +31,20 @@ export default function Header() {
             <div class="header">
 
                 <div class="title">
-                    <h1 id="name">Thrift</h1>
+                <h1 id="name"><a href="/localhost:3000">Thrift</a></h1>
                 </div>
 
                 <div class="searchbar">
                     <input type="search" id="search" name="search" placeholder="Search for Topics"/>
                 </div>
 
-                <div class={ user ? "notification" : "other-notification"}>
+                <div class={user ? "notification" : "other-notification"}>
                     <img src={bellIcon} alt=""/>
                 </div>
                 {
                     user ?
                         <div class="profile">
-                            <button id="profileButton">
-                                <img src={ user.avatar } alt="avatar" />
-                            </button>
+                            <img src={user.avatar} alt="avatar"/>
                         </div>
                         :
                         <div class="profileActions">
