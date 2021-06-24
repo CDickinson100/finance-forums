@@ -1,5 +1,5 @@
-import './App.css';
 import './fonts/fonts.css';
+import './App.css';
 import Header from './components/header/header';
 import HomeUI from './components/homepage/home-page';
 
@@ -8,7 +8,6 @@ function App() {
     <>
       <Header />
       <HomeUI />
-
     </>
   );
 }
