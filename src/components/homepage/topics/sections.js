@@ -10,16 +10,20 @@ function Section() {
                 <Link to="/topic">
                     <div class="topicList">
 
-                        <div id="title">
-                            <h3>Title</h3>
+                        <div class="left">
+                            <div id="title">
+                                <h3>Title</h3>
+                            </div>
+
+                            <div id="description">
+                                <h4>Description</h4>
+                            </div>
                         </div>
 
-                        <div id="description">
-                            <h4>Description</h4>
-                        </div>
-
-                        <div id="date">
-                            <h4>Date</h4>
+                        <div id="dataBox">
+                            <div id="date">
+                                <h4>Date</h4>
+                            </div>
                         </div>
 
                     </div>
