@@ -26,6 +26,7 @@
   float: right;
   position: fixed;
   bottom: 20px;
+  font-size: larger;
 }
 
 .lane1 {
@@ -34,7 +35,7 @@
   float: right;
   width: 25%;
   margin: auto;
-  padding-left: 75px;
+  padding-left: 20px;
 }
 
 .lane2 {
@@ -42,7 +43,7 @@
   display: flex;
   width: 35%;
   margin: 0 auto;
-  padding-left: 60px;
+  padding-left: 100px;
 }
 
 .sidebarText {
@@ -63,10 +64,7 @@
 }
 
 #sideBarTitle {
-    display: block;
-    width: 100%;
-    font-size: 8px;
+  display: block;
+  width: 100%;
+  font-size: 8px;
 }
-
-
-  

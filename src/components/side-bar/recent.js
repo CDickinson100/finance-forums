@@ -49,12 +49,6 @@ function RecentlyViewed() {
                     <div class="option">
                         <br />
                         <br />
-                        <text>999 Credit Score! HOW?</text>
-                    </div>
-
-                    <div class="option">
-                        <br />
-                        <br />
                         <text>Investing</text>
                     </div>
                     
