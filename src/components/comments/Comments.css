@@ -2,5 +2,13 @@
     text-align: center;
 }
 
-.comment{
+.comments button{
+    background-color: #04aa6d;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 6px;
+    margin: 8px 0 8px 10px;
 }
