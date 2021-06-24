@@ -4,7 +4,9 @@ import {useEffect, useState} from "react";
 
 export default function Header() {
 
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState(null)
+
+    const [menu, setMenu] = useState(false);
 
     async function getDetails() {
         if (localStorage.token) {
@@ -31,7 +33,7 @@ export default function Header() {
             <div class="header">
 
                 <div class="title">
-                <h1 id="name"><a href="/localhost:3000">Thrift</a></h1>
+                    <h1 id="name"><a href="/">Thrift</a></h1>
                 </div>
 
                 <div class="searchbar">
@@ -43,9 +45,21 @@ export default function Header() {
                 </div>
                 {
                     user ?
-                        <div class="profile">
-                            <img src={user.avatar} alt="avatar"/>
-                        </div>
+                        <>
+                            <button onClick={() => setMenu(!menu)}>
+                                <div class="profile">
+                                    <img src={user.avatar} alt="avatar"/>
+                                </div>
+                            </button>
+                            {menu && <div className="menu">
+                                <button onClick={() => {
+                                    localStorage.removeItem("token");
+                                    window.location = "/";
+                                }}> Log Out
+                                </button>
+                            </div>
+                            }
+                        </>
                         :
                         <div class="profileActions">
                             <a href="/login" class="loginButton">Login</a>

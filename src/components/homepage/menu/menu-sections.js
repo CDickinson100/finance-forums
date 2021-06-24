@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './menu-sections.css';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 function MenuSections() {
     const [activeMenu, setActiveMenu] = useState(0);
@@ -26,7 +26,7 @@ function MenuSections() {
 
                     <div>
                         <a href="/topics">
-                            <button  onClick={() => setActiveMenu(2)} class={activeMenu === 2 ? 'active-section' : 'section'}>
+                            <button onClick={() => setActiveMenu(2)} class={activeMenu === 2 ? 'active-section' : 'section'}>
                                 <h1>Articles</h1>
                             </button>
                         </a>
@@ -34,7 +34,7 @@ function MenuSections() {
 
                     <div>
                         <a href="/support">
-                            <button  onClick={() => setActiveMenu(3)} class={activeMenu === 3 ? 'active-section' : 'section'}>
+                            <button onClick={() => setActiveMenu(3)} class={activeMenu === 3 ? 'active-section' : 'section'}>
                                 <h1>Support</h1>
                             </button>
                         </a>
