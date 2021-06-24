@@ -1,0 +1,7 @@
+.menu {
+  display: none;
+  width: 150px;
+  position: absolute;
+  left: 40px;
+  margin-top: 40px;
+}
