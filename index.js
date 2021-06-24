@@ -70,8 +70,8 @@ app.post('/registerUser', async function (request, response) {
 /**
  * Gets a list of threads from a category
  */
-app.get('/getThreads', async function (request, response) {
-    let category = request.query.category;
+app.post('/getThreads', async function (request, response) {
+    let category = request.body.category;
     connection.query(`SELECT * from threads where category = ` + category,
         (error, results) => {
             if (error) console.log(error);
@@ -82,8 +82,8 @@ app.get('/getThreads', async function (request, response) {
 /**
  * Get thread info from thread id
  */
-app.get('/getThread', async function (request, response) {
-    let threadID = request.query.id;
+app.post('/getThread', async function (request, response) {
+    let threadID = request.body.id;
     connection.query(`SELECT * from threads where id = ` + threadID,
         (error, results) => {
             if (error) console.log(error);
@@ -94,8 +94,8 @@ app.get('/getThread', async function (request, response) {
 /**
  * Gets all comments from a thread
  */
-app.get('/getThreadComments', async function (request, response) {
-    let threadID = request.query.threadID;
+app.post('/getThreadComments', async function (request, response) {
+    let threadID = request.body.threadID;
     connection.query(`SELECT * from comments where thread = ` + threadID,
         (error, results) => {
             if (error) console.log(error);
@@ -106,11 +106,11 @@ app.get('/getThreadComments', async function (request, response) {
 /**
  * Get all comments from a thread
  */
-app.get('/addThreadComment', async function (request, response) {
-    let token = request.query.token;
+app.post('/addThreadComment', async function (request, response) {
+    let token = request.body.token;
     let userID = loginTokens[token];
-    let content = request.query.content;
-    let thread = request.query.thread;
+    let content = request.body.content;
+    let thread = request.body.thread;
     connection.query(`INSERT into comments (author, thread, date, content) VALUES(` + userID + `, ` + thread + `, "` + new Date() + `", "` + content + `")`,
         (error, results) => {
             if (error) console.log(error);
@@ -151,8 +151,8 @@ app.post('/addThreadReactions', async function (request, response) {
 /**
  * Get all reactions from a comment
  */
-app.get('/getCommentReactions', async function (request, response) {
-    let commentID = request.query.id;
+app.post('/getCommentReactions', async function (request, response) {
+    let commentID = request.body.id;
     connection.query(`SELECT * from reactions where commentID = ` + commentID,
         (error, results) => {
             if (error) console.log(error);
@@ -163,8 +163,8 @@ app.get('/getCommentReactions', async function (request, response) {
 /**
  * Get all reactions from a thread
  */
-app.get('/getThreadReactions', async function (request, response) {
-    let threadID = request.query.id;
+app.post('/getThreadReactions', async function (request, response) {
+    let threadID = request.body.id;
     connection.query(`SELECT * from reactions where threadID = ` + threadID,
         (error, results) => {
             if (error) console.log(error);
@@ -175,12 +175,12 @@ app.get('/getThreadReactions', async function (request, response) {
 /**
  * Creates a thread with a title content and category
  */
-app.get('/createThread', async function (request, response) {
-    let token = request.query.token;
+app.post('/createThread', async function (request, response) {
+    let token = request.body.token;
     let id = loginTokens[token];
-    let title = request.query.title;
-    let content = request.query.content;
-    let category = request.query.category;
+    let title = request.body.title;
+    let content = request.body.content;
+    let category = request.body.category;
     connection.query(`INSERT into threads (author, title, content, date, category) VALUES("` + id + `", "` + title + `", "` + content + `", "` + new Date() + `", ` + category + `)`,
         (error, results) => {
             if (error) console.log(error);
@@ -191,10 +191,10 @@ app.get('/createThread', async function (request, response) {
 /**
  * Gets user details from an id
  */
-app.get('/getUserDetails', async function (request, response) {
-    let id = request.query.id;
+app.post('/getUserDetails', async function (request, response) {
+    let id = request.body.id;
     if (!id) {
-        let token = request.query.token;
+        let token = request.body.token;
         id = loginTokens[token];
     }
 
@@ -208,9 +208,9 @@ app.get('/getUserDetails', async function (request, response) {
 /**
  * Returns a user token / error message
  */
-app.get('/login', async function (request, response) {
-    let email = request.query.email;
-    let password = request.query.password;
+app.post('/login', async function (request, response) {
+    let email = request.body.email;
+    let password = request.body.password;
     connection.query(`SELECT * FROM users where email = "` + email + `"`,
         (error, results) => {
             if (error) console.log(error);
@@ -240,7 +240,7 @@ app.post('/setAvatar', async function (request, response) {
 /**
  * Gets all categories return in json format
  */
-app.get('/getCategories', async function (request, response) {
+app.post('/getCategories', async function (request, response) {
     connection.query("SELECT * FROM categories",
         (error, results) => {
             if (error) console.log(error);
