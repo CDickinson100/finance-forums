@@ -13,7 +13,7 @@ function Topic1Home() {
 
             <BrowserRouter>
                 <Link to="/topic">
-                    <div class="topicList">
+                    <div class="topicList1">
 
                         <div class="leftBox1">
                             <div id="pensionTitle">

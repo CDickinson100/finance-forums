@@ -1,54 +1,46 @@
-.topicList {
+.topicList2 {
     display: flex;
     position: relative;
-    border-style: solid;
-    color: black;
     margin: 2.5%;
-    min-height: 20%;
+    min-height: 22.5%;
     width: 95%;
 }
 
-.rightBox {
+.rightBox2 {
     display: flex;
     position: relative;
     float: right;
-    border-style: solid;
-    color: black;
     height: 95%;
     width: 100px;
 }
 
-.leftBox {
+.leftBox2 {
     display: block;
     position: relative;
-    border-style: solid;
-    color: black;
     min-height: 100%;
     width: 75%;
 }
 
-#title {
+#riskTitle {
     position: relative;
-    border: solid;
     float: left;
     clear: left;
-    color: black;
     float: left;
     height: 40%;
-    width: 100%;
+    width: 95%;
+    margin-left: 2.5%;
 }
 
-#description {
+#riskDescription {
     position: relative;
     float: left;
     clear: left;
-    border: solid;
-    color: black;
     height: 55%;
-    width: 100%;
+    width: 95%;
+    margin-left: 2.5%;
 }
 
-#date {
+#riskDate {
     position: relative;
     border: solid;
     color: black;
