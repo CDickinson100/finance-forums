@@ -4,18 +4,22 @@
   background-color: hsl(283, 43%, 19%);
   align-self: center;
   text-align: center;
-  vertical-align: auto;
   border-radius: 6px;
   color: #24f5a8;
   text-decoration-line: none;
 }
 
+.name {
+  padding-top: 9px;
+}
+
 a {
   color: #24f5a8;
-  text-decoration-style: none;
+  text-decoration: none;
 }
 
 a:hover {
   color: #24f5a8;
   opacity: 0.5;
+  text-decoration: none;
 }
