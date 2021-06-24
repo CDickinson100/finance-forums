@@ -22,12 +22,16 @@ export default function CreateThread() {
     return (
         <div className="createThread">
         <div className="form">
+        <div className="titlebox">
+        <br></br>
             <label htmlFor="title"><b>Title</b></label>
-            <input type="text" placeholder="Enter Title" id="title" name="title" required/>
+            <br></br>
+            <input type="text" placeholder="Enter Title" id="titlebox" name="titlebox" required/>
+            </div>
             <br/>
             <label htmlFor="content"><b>Content</b></label>
             <br/>
-            <textarea name="text" cols="25" rows="5" id="content">
+            <textarea name="text" cols="65" rows="5" id="content">
             </textarea>
             </div>
 
