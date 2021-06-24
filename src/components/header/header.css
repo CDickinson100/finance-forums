@@ -6,7 +6,6 @@
   font-family: "regular";
   background-color: hsl(283, 43%, 19%);
   color: hsl(158, 91%, 55%);
-  position: fixed;
 }
 
 .searchbar input[type="search"],

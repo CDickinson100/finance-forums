@@ -9,11 +9,11 @@ function MenuSections() {
             <BrowserRouter>
                 <div class="menuFrame">
                     <div>
-                        <Link to="">
+                        <a href="">
                             <button onClick={() => setActiveMenu(0)} class={activeMenu === 0 ? 'active-section' : 'section'}>
                                 <h1>Home</h1>
                             </button>
-                        </Link>
+                        </a>
                     </div>
 
                     <div>
@@ -25,19 +25,19 @@ function MenuSections() {
                     </div>
 
                     <div>
-                        <Link to="/topics">
+                        <a href="/topics">
                             <button  onClick={() => setActiveMenu(2)} class={activeMenu === 2 ? 'active-section' : 'section'}>
                                 <h1>Articles</h1>
                             </button>
-                        </Link>
+                        </a>
                     </div>
 
                     <div>
-                        <Link to="/support">
+                        <a href="/support">
                             <button  onClick={() => setActiveMenu(3)} class={activeMenu === 3 ? 'active-section' : 'section'}>
                                 <h1>Support</h1>
                             </button>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </BrowserRouter>
