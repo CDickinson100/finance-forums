@@ -24,6 +24,8 @@ function HomeUI() {
                         <Topic1Home />
                         <Topic2Home />
 
+                        <br />
+
                         <div class="sectionName 1">
                             <h2>Popular Forums</h2>
                         </div>
