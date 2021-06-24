@@ -92,6 +92,33 @@ app.get('/getThread', async function (request, response) {
 });
 
 /**
+ * Gets all comments from a thread
+ */
+app.get('/getThreadComments', async function (request, response) {
+    let threadID = request.query.threadID;
+    connection.query(`SELECT * from comments where thread = ` + threadID,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+});
+
+/**
+ * Get all comments from a thread
+ */
+app.get('/addThreadComment', async function (request, response) {
+    let token = request.query.token;
+    let userID = loginTokens[token];
+    let content = request.query.content;
+    let thread = request.query.thread;
+    connection.query(`INSERT into comments (author, thread, date, content) VALUES(` + userID + `, ` + thread + `, "` + new Date() + `", "` + content + `")`,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+});
+
+/**
  * Get all reactions from a comment
  */
 app.post('/addCommentReactions', async function (request, response) {
@@ -249,7 +276,7 @@ function createTables() {
         "id INT auto_increment," +
         "author INT," +
         "thread INT," +
-        "date DATETIME," +
+        "date VARCHAR(255)," +
         "content LONGTEXT," +
         "primary key (id)" +
         ");"
