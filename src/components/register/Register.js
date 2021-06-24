@@ -31,6 +31,7 @@ export default function Register() {
         <div className="register">
         <br></br>
         <div className="form">
+        <br></br>
             <label htmlFor="email"><b>Email</b></label>
             <br></br>
             <input type="text" placeholder="Enter Email" id="email" name="email" required/>

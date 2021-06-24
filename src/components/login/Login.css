@@ -15,6 +15,7 @@
   border: none;
   cursor: pointer;
   width: 150px;
+  border-radius: 6px;
 }
 
 .login button:hover {
