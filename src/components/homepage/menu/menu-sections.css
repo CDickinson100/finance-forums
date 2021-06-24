@@ -1,0 +1,29 @@
+.menuFrame {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.topSection {
+    height: 15%;
+    width: 90%;
+    display: block;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.section {
+    height: 15%;
+    width: 90%;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#menuButton {
+    width: 100%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
