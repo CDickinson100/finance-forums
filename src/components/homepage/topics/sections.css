@@ -34,7 +34,7 @@
     clear: left;
     color: black;
     float: left;
-    height: 40px;
+    height: 40;
     width: 100%;
 }
 
@@ -44,7 +44,7 @@
     clear: left;
     border: solid;
     color: black;
-    height: 55%;
+    height: 50%;
     width: 100%;
 }
 
