@@ -60,11 +60,12 @@
   color: grey;
 }
 
-#sideTitle {
+#sideBarTitle {
   background-color: hsl(283, 43%, 19%);
   color: hsl(158, 91%, 55%);
   border-left: solid 10px hsl(158, 91%, 55%);
   padding-left: 10px;
   height: 60px;
   width: 250px;
+  font-size: 16px;
 }

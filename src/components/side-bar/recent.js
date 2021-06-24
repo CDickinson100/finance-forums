@@ -1,6 +1,8 @@
 import React from 'react';
 import RecentSection1 from './recentOptions';
 
+import './recent.css'
+
 function RecentlyViewed() {
     return (
         <>
@@ -10,9 +12,7 @@ function RecentlyViewed() {
                     <br />
                
                     <div id="sideBarTitle">
-                        <h1 id="sideTitle" >
-                            Recently Viewed
-                        </h1>
+                        <h2>Recently Viewed</h2>
                     </div>
 
                     <div class="option">
