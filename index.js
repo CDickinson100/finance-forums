@@ -193,16 +193,27 @@ app.post('/createThread', async function (request, response) {
  */
 app.post('/getUserDetails', async function (request, response) {
     let id = request.body.id;
+    let email = request.body.email;
     if (!id) {
         let token = request.body.token;
-        id = loginTokens[token];
+        if (token) {
+            id = loginTokens[token];
+        }
     }
-
-    connection.query(`SELECT * FROM users where id = ` + id,
-        (error, results) => {
-            if (error) console.log(error);
-            response.status(200).json(results);
-        });
+    if (id) {
+        connection.query(`SELECT * FROM users where id = ` + id ,
+            (error, results) => {
+                if (error) console.log(error);
+                response.status(200).json(results);
+            });
+    }
+    if (email) {
+        connection.query(`SELECT * FROM users where email = "` + email + `"`,
+            (error, results) => {
+                if (error) console.log(error);
+                response.status(200).json(results);
+            });
+    }
 })
 
 /**
