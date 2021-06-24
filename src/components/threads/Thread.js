@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import ReactMarkdown from 'react-markdown';
 import './Thread.css';
 import MenuSections from "../homepage/menu/menu-sections";
+import Comments from "../comments/Comments";
 
 export default function Thread(props) {
     const {id} = props.match.params;
@@ -21,7 +22,6 @@ export default function Thread(props) {
         setThread(body);
     }
 
-
     useEffect(() => {
         getThread();
     }, [])
@@ -35,6 +35,7 @@ export default function Thread(props) {
                 <h1>{thread[0].title}</h1>
                 <ReactMarkdown>{thread[0].content}</ReactMarkdown>
             </div>
+            <Comments id={id}/>
         </>
     )
 }
