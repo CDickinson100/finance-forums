@@ -92,6 +92,60 @@ app.get('/getThread', async function (request, response) {
 });
 
 /**
+ * Get all reactions from a comment
+ */
+app.post('/addCommentReactions', async function (request, response) {
+    let token = request.body.token;
+    let commentID = request.body.commentID;
+    let reaction = request.body.reaction;
+    let userID = loginTokens[token];
+    connection.query(`INSERT into reactions (commentID, userID, reactionType) VALUES("` + commentID + `", "` + userID + `", "` + reaction + `")`,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+});
+
+/**
+ * Get all reactions from a thread
+ */
+app.post('/addThreadReactions', async function (request, response) {
+    let token = request.body.token;
+    let threadID = request.body.threadID;
+    let reaction = request.body.reaction;
+    let userID = loginTokens[token];
+    connection.query(`INSERT into reactions (threadID, userID, reactionType) VALUES(` + threadID + `, ` + userID + `, "` + reaction + `")`,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+});
+
+/**
+ * Get all reactions from a comment
+ */
+app.get('/getCommentReactions', async function (request, response) {
+    let commentID = request.query.id;
+    connection.query(`SELECT * from reactions where commentID = ` + commentID,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+});
+
+/**
+ * Get all reactions from a thread
+ */
+app.get('/getThreadReactions', async function (request, response) {
+    let threadID = request.query.id;
+    connection.query(`SELECT * from reactions where threadID = ` + threadID,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+});
+
+/**
  * Creates a thread with a title content and category
  */
 app.get('/createThread', async function (request, response) {
