@@ -33,21 +33,6 @@ function RecentlyViewed() {
                         <text>Buying vs Renting a Property</text>
                     </div>
 
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-
                     <div class="extraOptions">
                         <div class="lane1">
                             <text class="sidebarText">
@@ -72,7 +57,7 @@ function RecentlyViewed() {
                                 <br />
                                 Terms
                                 <br />
-                                Privacy Policy
+                                Policies
                             </text>
                         </div>
                     </div>
