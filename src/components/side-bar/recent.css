@@ -34,7 +34,7 @@
 .extraOptions {
   display: flex;
   float: right;
-  position: absolute;
+  position: fixed;
   bottom: 20px;
 }
 
