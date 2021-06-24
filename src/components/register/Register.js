@@ -32,20 +32,33 @@ export default function Register() {
         <br></br>
         <div className="form">
             <label htmlFor="email"><b>Email</b></label>
+            <br></br>
             <input type="text" placeholder="Enter Email" id="email" name="email" required/>
+            <br></br>
 
             <label htmlFor="firstName"><b>First Name</b></label>
+            <br></br>
             <input type="text" placeholder="First Name" id="firstName" name="firstName" required/>
+            <br></br>
 
             <label htmlFor="lastName"><b>Last Name</b></label>
+            <br></br>
             <input type="text" placeholder="Last Name" id="lastName" name="lastName" required/>
+            <br></br>
 
             <label htmlFor="password"><b>Password</b></label>
+            <br></br>
             <input type="password" placeholder="Enter Password" id="password" name="password" required/>
+            <br></br>
+
             </div>
 
             <p id="incorrect"/>
+
+            <div className="Button">
             <button type="submit" onClick={create}>Create Account</button>
+            </div>
+
         </div>
     )
 }

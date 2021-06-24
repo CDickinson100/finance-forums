@@ -64,7 +64,11 @@ export default function Login() {
         </div>
 
             <p id="incorrect"/>
-            <button className="loginButton" type="submit" onClick={login}>Login</button>
+
+            <div className="Button">
+            <button type="submit" onClick={login}>Login</button>
+            </div>
+
         </div>
     )
 }

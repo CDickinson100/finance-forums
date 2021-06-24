@@ -21,15 +21,14 @@
   opacity: 0.8;
 }
 
-#loginButton {
-  text-align: center;
-}
-
 #incorrect {
   color: red;
 }
 
 .form {
-  padding-left: 10px;
+  text-align: center;
+}
+
+.Button {
   text-align: center;
 }

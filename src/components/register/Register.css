@@ -1,5 +1,5 @@
 .register input {
-  width: 100%;
+  width: 800px;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -14,7 +14,7 @@
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 150px;
 }
 
 .register button:hover {
@@ -26,5 +26,5 @@
 }
 
 .form {
-  padding-left: 10px;
+  text-align: center;
 }
