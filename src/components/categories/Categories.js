@@ -27,7 +27,7 @@ export default function Categories() {
                 }).map((value) => {
                     return <div>
                         <a href={"/threadList/" + value.id}>
-                            <button class={'section'}>
+                            <button class={'section indent'}>
                                 <h1>{value.category_name}</h1>
                             </button>
                         </a>

@@ -11,7 +11,7 @@ function MenuSections() {
             <BrowserRouter>
                 <div class="menuFrame">
                     <div>
-                        <a href="/">
+                        <a>
                             <button onClick={() => setActiveMenu(0)} class={activeMenu === 0 ? 'active-section' : 'section'}>
                                 <h1>Home</h1>
                             </button>
