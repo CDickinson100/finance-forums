@@ -1,40 +1,49 @@
-import Section from "./topics/sections";
+import React, {useEffect, useState} from 'react';
 import "./home-page.css"
 import MenuSections from "./menu/menu-sections";
-import Topic1Home from "../topic1/topic1-home";
-import Topic2Home from "../topic2/topic2";
-import Forum1Home from "../forum1/forum1";
-import Forum2Home from "../forum2/forum2";
+import ReactMarkdown from "react-markdown";
 
-function HomeUI() {
+export default function HomeUI() {
+
+    const [threads, setThreads] = useState([]);
+
+    async function getThreads() {
+        const requestOptions = {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                'category': 1
+            })
+        };
+        const response = await fetch('/getThreads', requestOptions);
+        const body = await response.json();
+        setThreads(body);
+    }
+
+    useEffect(() => {
+        getThreads();
+    }, [])
+
     return (
         <>
             <div class="home">
                 <div class="menu">
-                    <MenuSections />
+                    <MenuSections/>
                 </div>
 
                 <div class="topics">
-
-                    <div class="sectionList">
-                        <div class="sectionName">
-                            <h2>Popular Articles</h2>
-                        </div>
-
-                        <Topic1Home />
-                        <Topic2Home />
-
-                        <br />
-
-                        <div class="sectionName 1">
-                            <h2>Popular Forums</h2>
-                        </div>
-
-                        <Forum1Home />
-                        <Forum2Home />
-
-                    </div>
-
+                    <center>
+                        {
+                            threads.map((value) => {
+                                return <div className="thread">
+                                    <div id="thread">
+                                        <h1>{value.title}</h1>
+                                        <ReactMarkdown>{value.content}</ReactMarkdown>
+                                    </div>
+                                </div>
+                            })
+                        }
+                    </center>
                 </div>
 
                 <div class="news">
@@ -45,5 +54,3 @@ function HomeUI() {
         </>
     )
 }
-
-export default HomeUI;
