@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import ReactMarkdown from 'react-markdown';
 
 export default function Thread(props) {
     const {id} = props.match.params;
@@ -26,7 +27,7 @@ export default function Thread(props) {
     return thread.length === 1 && (
         <div id="thread">
             <h1>{thread[0].title}</h1>
-            <p>{thread[0].content}</p>
+            <ReactMarkdown>{thread[0].content}</ReactMarkdown>
         </div>
     )
 }
