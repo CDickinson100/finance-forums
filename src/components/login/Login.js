@@ -22,6 +22,7 @@ export default function Login() {
             document.getElementById("incorrect").innerHTML = body.message;
         } else {
             localStorage.setItem("token", body.token);
+            window.location = "/";
         }
     }
 
