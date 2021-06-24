@@ -31,7 +31,7 @@ export default function Header() {
             <div class="header">
 
                 <div class="title">
-                    <h1 id="name">forum title</h1>
+                    <h1 id="name">Thrift</h1>
                 </div>
 
                 <div class="searchbar">

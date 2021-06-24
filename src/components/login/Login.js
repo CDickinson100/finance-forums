@@ -48,7 +48,9 @@ export default function Login() {
     return (
         <div className="login">
 
+            <br></br>
             <img id="icon" src={defaultAvatar} alt="Avatar"/>
+            <br></br>
             <label htmlFor="email"><b>Email</b></label>
             <input type="text" onChange={changeAvatar} placeholder="Enter Email" id="email" name="email" required/>
 
