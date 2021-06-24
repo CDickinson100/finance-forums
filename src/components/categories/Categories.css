@@ -1,7 +1,21 @@
 .category {
-    width: 50%;
-    height: 50px;
-    background-color: grey;
-    align-self: center;
-    text-align: center;
+  width: 30%;
+  height: 60px;
+  background-color: hsl(283, 43%, 19%);
+  align-self: center;
+  text-align: center;
+  vertical-align: auto;
+  border-radius: 6px;
+  color: #24f5a8;
+  text-decoration-line: none;
+}
+
+a {
+  color: #24f5a8;
+  text-decoration-style: none;
+}
+
+a:hover {
+  color: #24f5a8;
+  opacity: 0.5;
 }
