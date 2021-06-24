@@ -40,9 +40,7 @@ export default function Header() {
                             <img class="inline" src={iress} alt="" />
                         </a>
                     </div>
-                    <div class="logo" >
-                        <h1 class="inline" id="name"><a href="/">Thrift</a></h1>
-                    </div>
+                    <h1>Thrift</h1>
                 </div>
 
                 <div class="searchbar">
