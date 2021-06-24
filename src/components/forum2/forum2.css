@@ -36,7 +36,8 @@
 #forum2Date {
     position: relative;
     float: right;
-    width: 100%;
+    text-align: center;
+    width: 150px;
     height: 100%;
 }
 
