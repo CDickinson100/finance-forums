@@ -17,11 +17,11 @@ function MenuSections() {
                     </div>
 
                     <div>
-                        <Link to="/categories">
+                        <a href="/categories">
                             <button onClick={() => setActiveMenu(1)} class={activeMenu === 1 ? 'active-section' : 'section'}>
                                 <h1>Categories</h1>
                             </button>
-                        </Link>
+                        </a>
                     </div>
 
                     <div>
