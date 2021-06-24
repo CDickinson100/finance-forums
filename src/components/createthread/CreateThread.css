@@ -38,3 +38,7 @@
 .Button {
   text-align: center;
 }
+
+.Dropdown {
+  padding-left: 5px;
+}
