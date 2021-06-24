@@ -33,7 +33,11 @@ function Topic1Home() {
 
                         <div id="rightBox1">
                             <div id="pensionDate">
-                                <h4>Date</h4>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <text id="date">April 14, 2020</text>
                             </div>
                         </div>
 

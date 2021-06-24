@@ -35,6 +35,11 @@ function Topic2Home() {
                                     <br />
                                     <br />
                                     <br />
+                                    <br />
+                                    Jan 3, 2018
+                                    <br />
+                                    <br />
+                                    <br />
                                 </text>
                             </div>
                         </div>

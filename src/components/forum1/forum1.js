@@ -4,6 +4,7 @@ import "./forum1.css";
 import reply from "../../icons/replies.jpg"
 
 function Forum1Home() {
+    const number = ' 8201';
 
     return (
         <>
@@ -20,12 +21,11 @@ function Forum1Home() {
 
                         <div id="rightBox3">
                             <div id="forumDate">
-                                <h4>Date</h4>
+                                <br />
+                                <text id="middle">
+                                    18hrs ago
+                                </text>
                             </div>
-                        </div>
-
-                        <div id="iconBox2">
-                            <img id="replyImg" src={reply} alt="" />
                         </div>
 
                     </div>

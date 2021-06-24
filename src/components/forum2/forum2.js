@@ -19,7 +19,10 @@ function Forum2Home() {
 
                         <div id="rightBox4">
                             <div id="forum2Date">
-                                <h4>Date</h4>
+                                <br />
+                                <text id="date2">
+                                    12hrs ago
+                                </text>
                             </div>
                         </div>
 
