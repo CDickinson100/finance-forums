@@ -19,7 +19,7 @@ const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'admin',
-    password: 'Password1;',
+    password: 'password',
     database: 'financeforums'
 });
 
@@ -32,11 +32,11 @@ connection.connect(function (err) {
 /**
  * Creates a new user
  */
-app.get('/registerUser', async function (request, response) {
-    let email = request.query.email;
-    let firstName = request.query.firstName;
-    let lastName = request.query.lastName;
-    let password = request.query.password;
+app.post('/registerUser', async function (request, response) {
+    let email = request.body.email;
+    let firstName = request.body.firstName;
+    let lastName = request.body.lastName;
+    let password = request.body.password;
     let message = "";
     if (!usernamePattern.test(firstName)) {
         message = "First name is not a valid name"
