@@ -43,16 +43,16 @@ export default function Header() {
                 </div>
                 {
                     user ?
-                        <div className="profile">
+                        <div class="profile">
                             <button id="profileButton">
                                 <img src={user.avatar}/>
                             </button>
                         </div>
                         :
-                        <>
-                            <a href="/login">Login</a>
-                            <a href="/register">Register</a>
-                        </>
+                        <div class="profileActions">
+                            <a href="/login" class="loginButton">Login</a>
+                            <a href="/register" class="registerButton">Register</a>
+                        </div>
                 }
             </div>
         </>
