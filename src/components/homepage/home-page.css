@@ -6,7 +6,6 @@
 
 .menu {
     display: flex;
-    border: 1px black solid;
     width: 15%;
     min-height: 600px;
     margin: 2.5%;
