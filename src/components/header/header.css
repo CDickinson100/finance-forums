@@ -142,3 +142,7 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 50px;
     margin-right: 10px;
 }
+
+#mainHeading {
+    cursor: pointer;
+}

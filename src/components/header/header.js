@@ -41,7 +41,7 @@ export default function Header() {
                             <img class="inline" src={iress} alt="" />
 
                         </div>
-                        <h1>Thrift</h1>
+                        <h1 id="mainHeading">Thrift</h1>
                     </div>
                 </a>
 

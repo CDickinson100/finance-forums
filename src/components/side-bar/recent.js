@@ -1,6 +1,4 @@
 import React from 'react';
-import RecentSection1 from './recentOptions';
-
 import './recent.css'
 
 function RecentlyViewed() {
@@ -51,7 +49,7 @@ function RecentlyViewed() {
                         <br />
                         <text>Investing</text>
                     </div>
-                    
+
                     <div class="option">
                         <br />
                         <br />
