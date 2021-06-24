@@ -32,17 +32,15 @@ export default function HomeUI() {
                     <MenuSections/>
                 </div>
 
-                <div class="topics">
-                    <center>
-                        {
-                            threads.map((value) => {
-                                return <div id="thread">
-                                    <h1>{value.title}</h1>
-                                    <ReactMarkdown>{value.content}</ReactMarkdown>
-                                </div>
-                            })
-                        }
-                    </center>
+                <div class="news">
+                    {
+                        threads.map((value) => {
+                            return <div id="thread">
+                                <h1>{value.title}</h1>
+                                <ReactMarkdown>{value.content}</ReactMarkdown>
+                            </div>
+                        })
+                    }
                 </div>
 
                 <div class="side">
