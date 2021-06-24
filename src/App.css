@@ -4,3 +4,7 @@ body {
   padding: 0px;
   font-family: "regular";
 }
+
+textarea{
+  resize: none;
+}

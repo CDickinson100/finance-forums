@@ -59,7 +59,7 @@ export default function CreateThread() {
                 <br/>
                 <label htmlFor="content"><b>Content</b></label>
                 <br/>
-                <textarea name="text" cols="65" rows="5" id="content">
+                <textarea name="text" cols="100" rows="20" id="content">
             </textarea>
             </div>
 
