@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import ReactMarkdown from "react-markdown";
+import './Comments.css';
 
 export default function Comments(props) {
     const {id} = props;
@@ -18,7 +19,7 @@ export default function Comments(props) {
         };
         const response = await fetch('/addThreadComment', requestOptions);
         getComments();
-        document.getElementById('content').value="";
+        document.getElementById('content').value = "";
     }
 
     async function getComments() {
@@ -40,10 +41,12 @@ export default function Comments(props) {
     }, [])
 
     return (
-        <>
+        <div className="comments">
             {
                 comments.map(value => {
-                    return <ReactMarkdown>{value.content}</ReactMarkdown>
+                    return <div className="comment">
+                        <ReactMarkdown>{value.content}</ReactMarkdown>
+                    </div>
                 })
             }
             <textarea name="text" cols="65" rows="5" id="content"/>
@@ -51,6 +54,6 @@ export default function Comments(props) {
             <button onClick={() => postComment()}>
                 Post Comment
             </button>
-        </>
+        </div>
     )
 }
