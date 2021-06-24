@@ -5,10 +5,11 @@ import HomeUI from './components/homepage/home-page';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
       <HomeUI />
-    </div>
+
+    </>
   );
 }
 

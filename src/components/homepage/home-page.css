@@ -1,6 +1,9 @@
 .frame {
-    border-style: solid;
-    color: black;
+    border: 1px black solid;
     width: 100%;
     
+}
+
+.topics {
+    border: 1px black solid;
 }
