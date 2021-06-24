@@ -45,7 +45,7 @@ export default function Header() {
                     user ?
                         <div class="profile">
                             <button id="profileButton">
-                                <img src={user.avatar}/>
+                                <img src={ user.avatar } alt="avatar" />
                             </button>
                         </div>
                         :
