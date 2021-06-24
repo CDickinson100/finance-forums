@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import ReactMarkdown from 'react-markdown';
 import './Thread.css';
+import MenuSections from "../homepage/menu/menu-sections";
 
 export default function Thread(props) {
     const {id} = props.match.params;
@@ -26,9 +27,14 @@ export default function Thread(props) {
     }, [])
 
     return thread.length === 1 && (
-        <div id="thread">
-            <h1>{thread[0].title}</h1>
-            <ReactMarkdown>{thread[0].content}</ReactMarkdown>
-        </div>
+        <>
+            <div className="menu">
+                <MenuSections/>
+            </div>
+            <div id="thread">
+                <h1>{thread[0].title}</h1>
+                <ReactMarkdown>{thread[0].content}</ReactMarkdown>
+            </div>
+        </>
     )
 }

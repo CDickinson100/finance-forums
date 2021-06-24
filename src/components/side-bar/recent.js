@@ -1,6 +1,8 @@
 import React from 'react';
 import RecentSection1 from './recentOptions';
 
+import './recent.css'
+
 function RecentlyViewed() {
     return (
         <>
