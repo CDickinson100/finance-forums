@@ -27,6 +27,11 @@
   border-radius: 6px;
 }
 
+a {
+  color: #24f5a8;
+  text-decoration: none;
+}
+
 .createThread button:hover {
   opacity: 0.8;
 }
