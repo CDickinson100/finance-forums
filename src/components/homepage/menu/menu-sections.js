@@ -17,27 +17,11 @@ function MenuSections() {
                     </div>
 
                     <div class={'section'}>
-                        <Link to="/topics">
+                        <a href="/categories">
                             <button id="menuButton">
-                                <h1>Topics</h1>
+                                <h1>Categories</h1>
                             </button>
-                        </Link>
-                    </div>
-
-                    <div class={'section'}>
-                        <Link to="/forums">
-                            <button id="menuButton">
-                                <h1>Forum</h1>
-                            </button>
-                        </Link>
-                    </div>
-
-                    <div class={'section'}>
-                        <Link to="/support">
-                            <button id="menuButton">
-                                <h1>Support</h1>
-                            </button>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </BrowserRouter>

@@ -42,8 +42,6 @@
 
 #riskDate {
     position: relative;
-    border: solid;
-    color: black;
     float: right;
     width: 150px;
     height: 100%;
@@ -51,4 +49,6 @@
 
 #date {
     font-size: 12px;
+    text-align: center;
+    border: none;
 }
