@@ -8,12 +8,11 @@ function RecentlyViewed() {
                 <div class="recent">
                     <br />
                     <br />
-                    <br />
-
+               
                     <div id="sideBarTitle">
-                        <h3 id="sideTitle" >
+                        <h1 id="sideTitle" >
                             Recently Viewed
-                        </h3>
+                        </h1>
                     </div>
 
                     <div class="option">
