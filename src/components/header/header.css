@@ -1,0 +1,13 @@
+.class {
+    border-style: solid;
+    width: 20%;
+}
+
+.title {
+    border-style: solid;
+    color:black;
+}
+
+#title {
+    float: left;
+}
