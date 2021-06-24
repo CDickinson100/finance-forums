@@ -9,7 +9,7 @@
   border-left: solid 10px hsl(158, 91%, 55%);
 }
 
-.menuFrame button {
+a button {
   margin: 5px 0px;
   height: 60px;
   border: none;
