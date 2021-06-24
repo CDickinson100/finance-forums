@@ -43,7 +43,7 @@
 
 .buttonCreate {
   top: 160px;
-  right: 40px;
+  right: 50px;
   border-left: solid 10px hsl(283, 43%, 19%);
   position: fixed;
 }

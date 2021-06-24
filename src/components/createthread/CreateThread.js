@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './CreateThread.css';
 
 export default function CreateThread() {
@@ -8,7 +8,7 @@ export default function CreateThread() {
     async function getCategories() {
         const requestOptions = {
             method: 'POST',
-            headers: {'Content-Type': 'application/json'}
+            headers: { 'Content-Type': 'application/json' }
         };
         const response = await fetch('/getCategories', requestOptions);
         const body = await response.json();
@@ -21,7 +21,7 @@ export default function CreateThread() {
         const category = document.getElementById('categories').value;
         const requestOptions = {
             method: 'POST',
-            headers: {'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 'token': localStorage.token,
                 'title': title,
@@ -40,27 +40,26 @@ export default function CreateThread() {
     return (
         <div className="createThread">
             <div className="form">
-            <br></br>
-            <div className="Dropdown">
-                <label htmlFor="categories">Choose a Category:</label>
-            </div>
-
-                <select name="categories" id="categories">
-                    {categories.map(value => {
-                        return <option value={value.id}>{value.category_name}</option>
-                    })}
-                </select>
+                <br></br>
+                <div className="Dropdown">
+                    <label htmlFor="categories">Thread category:</label>
+                    <select name="categories" id="categories">
+                        {categories.map(value => {
+                            return <option value={value.id}>{value.category_name}</option>
+                        })}
+                    </select>
+                </div>
                 <div className="titlebox">
                     <br></br>
                     <label htmlFor="title"><b>Title</b></label>
                     <br></br>
-                    <input type="text" placeholder="Enter Title" id="titlebox" name="titlebox" required/>
+                    <input type="text" placeholder="Enter a title" id="titlebox" name="titlebox" required />
                 </div>
-                <br/>
+                <br />
                 <label htmlFor="content"><b>Content</b></label>
-                <br/>
-                <textarea name="text" cols="100" rows="20" id="content">
-            </textarea>
+                <br />
+                <textarea name="text" cols="100" rows="20" id="content" placeholder={'Enter content for the thread...'}>
+                </textarea>
             </div>
 
             <div className="Button">
