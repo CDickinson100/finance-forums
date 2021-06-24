@@ -34,6 +34,30 @@ function RecentlyViewed() {
                         <text>Buying vs Renting a Property</text>
                     </div>
 
+                    <div class="option">
+                        <br />
+                        <br />
+                        <text>Credit Score Tips</text>
+                    </div>
+
+                    <div class="option">
+                        <br />
+                        <br />
+                        <text>Help To Buy ISA</text>
+                    </div>
+
+                    <div class="option">
+                        <br />
+                        <br />
+                        <text>Investing</text>
+                    </div>
+                    
+                    <div class="option">
+                        <br />
+                        <br />
+                        <text>Stocks and Shares</text>
+                    </div>
+
                     <div class="extraOptions">
                         <div class="lane1">
                             <text class="sidebarText">
