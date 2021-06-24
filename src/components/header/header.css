@@ -129,13 +129,14 @@ input[type="search"]::-webkit-search-results-decoration {
     color: hsl(158, 91%, 55%) !important;
 }
 
-.profile button{
+.profile button {
     background-color: transparent;
     border: none;
 }
 
 .logo {
-  text-align: center;
-  vertical-align: middle;
-  line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-right: 10px;
 }
