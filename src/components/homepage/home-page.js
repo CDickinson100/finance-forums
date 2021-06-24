@@ -1,6 +1,7 @@
 import Section from "./topics/sections";
-import "./home-page.css";
+import "./home-page.css"
 import MenuSections from "./menu/menu-sections";
+import Topic1Home from "../topic1/topic1-home";
 
 function HomeUI() {
     return (
@@ -12,7 +13,7 @@ function HomeUI() {
 
                 <div class="topics">
                     <div class="sectionList">
-                        <Section />
+                        <Topic1Home />
                         <Section />
                         <Section />
 
