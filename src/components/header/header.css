@@ -3,6 +3,7 @@
   height: 115px;
   display: inline-flex;
   box-shadow: 0px 0px 10px 10px rgba(200, 200, 200, 0.5);
+  font-family: "regular";
 }
 
 .searchbar input[type="search"],

@@ -1,5 +1,5 @@
 import Section from "./topics/sections";
-import "./home-page.css"
+import "./home-page.css";
 import MenuSections from "./menu/menu-sections";
 
 function HomeUI() {
