@@ -11,6 +11,11 @@ const saltRounds = 10;
 
 const loginTokens = {};
 
+const usernamePattern = /^[a-zA-Z]{3,15}$/;
+//Minimum eight characters, at least one upper case English letter, one lower case English letter, one number and one special character
+const passwordPattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-;:]).{8,}$/;
+const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'admin',
@@ -27,16 +32,39 @@ connection.connect(function (err) {
 /**
  * Creates a new user
  */
-app.post('/registerUser', async function (request, response) {
-    let email = request.body.email;
-    let firstName = request.body.firstName;
-    let lastName = request.body.lastName;
-    let password = request.body.password;
-    connection.query(`INSERT into users (email, first_name, last_name, password, avatar, role) VALUES("` + email + `", "` + firstName + `", "` + lastName + `", "` + bcrypt.hashSync(password, saltRounds) + `", "` + defaultAvatar + `", "member")`,
-        (error, results) => {
-            if (error) console.log(error);
-            response.status(200).json(results);
+app.get('/registerUser', async function (request, response) {
+    let email = request.query.email;
+    let firstName = request.query.firstName;
+    let lastName = request.query.lastName;
+    let password = request.query.password;
+    let message = "";
+    if (!usernamePattern.test(firstName)) {
+        message = "First name is not a valid name"
+    }
+    if (!usernamePattern.test(lastName)) {
+        message = "Last name is not a valid name"
+    }
+    if (!passwordPattern.test(password)) {
+        message = "Password needs to include uper and lower case a number a symbol and be 8+ characters long"
+    }
+    if (!emailPattern.test(email)) {
+        message = "Invalid email"
+    }
+    if (message === "") {
+        connection.query(`INSERT into users (email, first_name, last_name, password, avatar, role) VALUES("` + email + `", "` + firstName + `", "` + lastName + `", "` + bcrypt.hashSync(password, saltRounds) + `", "` + defaultAvatar + `", "member")`,
+            (error, results) => {
+                if (error) console.log(error);
+                response.status(200).json({
+                    success: true,
+                    message: message
+                });
+            });
+    } else {
+        response.status(200).json({
+            success: false,
+            message: message
         });
+    }
 });
 
 /**
