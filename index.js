@@ -36,8 +36,33 @@ app.post('/registerUser', async function (request, response) {
         (error, results) => {
             if (error) console.log(error);
             response.status(200).json(results);
-        })
+        });
 });
+
+/**
+ * Gets user account details from a token
+ */
+app.get('/getAccountDetails', async function (request, response) {
+    let token = request.query.token;
+    let email = loginTokens[token];
+    connection.query(`SELECT * FROM users where email = "` + email + `"`,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+})
+
+/**
+ * Gets user details from an id
+ */
+app.get('/getUserDetails', async function (request, response) {
+    let id = request.query.id;
+    connection.query(`SELECT * FROM users where id = ` + id,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+})
 
 /**
  * Returns a user token / error message
@@ -53,7 +78,7 @@ app.get('/login', async function (request, response) {
                 token: auth ? getToken(email) : "",
                 message: auth ? "" : "Incorrect Password"
             });
-        })
+        });
 });
 
 /**
@@ -64,7 +89,7 @@ app.get('/getCategories', async function (request, response) {
         (error, results) => {
             if (error) console.log(error);
             response.status(200).json(results);
-        })
+        });
 });
 
 function getToken(name) {
