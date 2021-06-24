@@ -12,25 +12,19 @@ function MenuSections() {
                             <h1> Home </h1>
                         </button>
                     </Link>
-                </div>
 
-                <div class="section">
                     <Link to="">
                         <button id="home">
                             <h1> Home </h1>
                         </button>
                     </Link>
-                </div>
 
-                <div class="section">
                     <Link to="">
                         <button id="home">
                             <h1> Home </h1>
                         </button>
                     </Link>
-                </div>
 
-                <div class="section">
                     <Link to="">
                         <button id="home">
                             <h1> Home </h1>

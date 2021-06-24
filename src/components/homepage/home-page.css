@@ -7,7 +7,7 @@
 .menu {
     display: flex;
     border: 1px black solid;
-    width: 22.5%;
+    width: 15%;
     min-height: 600px;
     margin: 2.5%;
 }
@@ -16,7 +16,7 @@
     display: flex;
     border: 1px black solid;
     float: right;
-    width: 45%;
+    width: 57.5%;
     min-height: 600px;
     margin: 2.5%;
 }
