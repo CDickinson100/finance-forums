@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import "./home-page.css"
 import MenuSections from "./menu/menu-sections";
 import ReactMarkdown from "react-markdown";
+import RecentlyViewed from '../side-bar/recent';
 
 export default function HomeUI() {
 
@@ -10,7 +11,7 @@ export default function HomeUI() {
     async function getThreads() {
         const requestOptions = {
             method: 'POST',
-            headers: {'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 'category': 1
             })
@@ -28,7 +29,7 @@ export default function HomeUI() {
         <>
             <div class="home">
                 <div class="menu">
-                    <MenuSections/>
+                    <MenuSections />
                 </div>
 
                 <div class="topics">
@@ -46,8 +47,10 @@ export default function HomeUI() {
                     </center>
                 </div>
 
-                <div class="news">
-
+                <div class="side">
+                    <div id="recent" >
+                        <RecentlyViewed />
+                    </div>
                 </div>
             </div>
 
