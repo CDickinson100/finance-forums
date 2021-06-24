@@ -1,28 +1,30 @@
 import bellIcon from '../../icons/bell.svg';
 import "./header.css";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 export default function Header() {
-
-    const token = "1xq2fjn6ih3lbww9ofb85r";
 
     const [user, setUser] = useState(null);
 
     async function getDetails() {
-        const requestOptions = {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                'token': token
-            })
-        };
+        if (localStorage.token) {
+            const requestOptions = {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    'token': localStorage.token
+                })
+            };
 
-        const response = await fetch('/getUserDetails', requestOptions);
-        const body = await response.json();
-        setUser(body[0]);
+            const response = await fetch('/getUserDetails', requestOptions);
+            const body = await response.json();
+            setUser(body[0]);
+        }
     }
 
-    getDetails();
+    useEffect(() => {
+        getDetails();
+    }, [])
 
     return (
         <>

@@ -21,7 +21,7 @@ export default function Login() {
         if (body.message) {
             document.getElementById("incorrect").innerHTML = body.message;
         } else {
-            alert(body.token);
+            localStorage.setItem("token", body.token);
         }
     }
 
