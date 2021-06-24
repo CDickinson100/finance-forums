@@ -23,6 +23,23 @@ function MenuSections() {
                             </button>
                         </a>
                     </div>
+
+                    <div class="section">
+                        <Link to="/topics">
+                            <button id="menuButton">
+                                <h1> Articles </h1>
+                            </button>
+                        </Link>
+                    </div>
+
+                    <div class="section">
+                        <Link to="/support">
+                            <button id="menuButton">
+                                <h1> Support </h1>
+                            </button>
+                        </Link>
+                    </div>
+
                 </div>
             </BrowserRouter>
         </>
