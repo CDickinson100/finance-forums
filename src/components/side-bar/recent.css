@@ -20,6 +20,7 @@
   height: 10%;
   text-align: left;
   margin-left: 5%;
+  cursor: pointer;
 }
 
 .option1 {
@@ -58,6 +59,7 @@
 .sidebarText {
   font-size: 14px;
   color: grey;
+  cursor: pointer;
 }
 
 #sideTitle {
