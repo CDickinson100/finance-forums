@@ -38,15 +38,13 @@ export default function Header() {
                     <input type="search" id="search" name="search" placeholder="Search for Topics"/>
                 </div>
 
-                <div class={ user ? "notification" : "other-notification"}>
+                <div class={user ? "notification" : "other-notification"}>
                     <img src={bellIcon} alt=""/>
                 </div>
                 {
                     user ?
                         <div class="profile">
-                            <button id="profileButton">
-                                <img src={ user.avatar } alt="avatar" />
-                            </button>
+                            <img src={user.avatar} alt="avatar"/>
                         </div>
                         :
                         <div class="profileActions">

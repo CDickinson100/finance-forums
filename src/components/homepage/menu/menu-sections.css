@@ -1,29 +1,22 @@
-.menuFrame {
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-
-.topSection {
-    height: 15%;
-    width: 90%;
-    display: block;
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
+.active-section {
+  color: #ff435f;
+  border-left: solid 10px #ff435f;
+  background-color: hsl(283, 43%, 19%);
 }
 
 .section {
-    height: 15%;
-    width: 90%;
-    display: block;
-    margin-left: 5%;
-    margin-right: 5%;
+  color: hsl(158, 91%, 55%);
+  border-left: solid 10px hsl(158, 91%, 55%);
 }
 
-#menuButton {
-    width: 100%;
-    border: none;
-    background-color: white;
-    cursor: pointer;
+button {
+  margin: 5px 0px;
+  height: 60px;
+  border: none;
+  width: 250px;
+  background-color: hsl(283, 43%, 19%);
+  font-family: "light";
+  font-size: 8px;
+  text-align: left;
+  padding-left: 30px;
 }

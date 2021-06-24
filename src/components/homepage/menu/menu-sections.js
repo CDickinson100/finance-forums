@@ -17,14 +17,14 @@ function MenuSections() {
                     </div>
 
                     <div>
-                        <a href="/categories">
+                        <Link to="/categories">
                             <button onClick={() => setActiveMenu(1)} class={activeMenu === 1 ? 'active-section' : 'section'}>
                                 <h1>Categories</h1>
                             </button>
-                        </a>
+                        </Link>
                     </div>
 
-                    <div class="section">
+                    <div>
                         <Link to="/topics">
                             <button  onClick={() => setActiveMenu(2)} class={activeMenu === 2 ? 'active-section' : 'section'}>
                                 <h1>Articles</h1>
@@ -32,14 +32,13 @@ function MenuSections() {
                         </Link>
                     </div>
 
-                    <div class="section">
+                    <div>
                         <Link to="/support">
                             <button  onClick={() => setActiveMenu(3)} class={activeMenu === 3 ? 'active-section' : 'section'}>
                                 <h1>Support</h1>
                             </button>
                         </Link>
                     </div>
-
                 </div>
             </BrowserRouter>
         </>
