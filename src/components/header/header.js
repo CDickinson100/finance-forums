@@ -1,7 +1,7 @@
 import bellIcon from '../../icons/bell.svg';
-import iress from '../../icons/iress.jpg';
+import iress from '../../icons/iress-purple.svg';
 import "./header.css";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
 
@@ -13,7 +13,7 @@ export default function Header() {
         if (localStorage.token) {
             const requestOptions = {
                 method: 'POST',
-                headers: {'Content-Type': 'application/json'},
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     'token': localStorage.token
                 })
@@ -34,23 +34,23 @@ export default function Header() {
             <div class="header">
 
                 <div class="title">
-                    <img src={iress} alt=""/>
+                    <img src={iress} alt="" />
                     <h1 id="name"><a href="/">Thrift</a></h1>
                 </div>
 
                 <div class="searchbar">
-                    <input type="search" id="search" name="search" placeholder="Search for Topics"/>
+                    <input type="search" id="search" name="search" placeholder="Search for Topics" />
                 </div>
 
                 <div class={user ? "notification" : "other-notification"}>
-                    <img src={bellIcon} alt=""/>
+                    <img src={bellIcon} alt="" />
                 </div>
                 {
                     user ?
                         <>
                             <button onClick={() => setMenu(!menu)}>
                                 <div class="profile">
-                                    <img src={user.avatar} alt="avatar"/>
+                                    <img src={user.avatar} alt="avatar" />
                                 </div>
                             </button>
                             {menu && <div className="menu">
