@@ -1,9 +1,31 @@
-.frame {
+.home {
+    display: flex;
+    width:600px;
+    height:650px;
+    padding-top:20px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.menu {
+    display: flex;
     border: 1px black solid;
-    width: 100%;
-    
+    width: 20%;
+    min-height: 650px;
 }
 
 .topics {
+    display: flex;
     border: 1px black solid;
+    float: right;
+    width: 45%;
+    min-height: 650px;
+}
+
+.news {
+    display: flex;
+    border: 1px black solid;
+    float: right;
+    width: 20%;
+    min-height: 650px;
 }

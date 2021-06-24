@@ -4,19 +4,20 @@ import "./home-page.css"
 function HomeUI() {
     return (
         <>
-            <div class="frame">
+            <div class="home">
                 <div class="menu">
+                </div>
+
+                <div class="topics">
+                    <Section />
+
+                </div>
+
+                <div class="news">
+
                 </div>
             </div>
 
-            <div class="topics">
-                <Section />
-
-            </div>
-
-            <div class="news">
-
-            </div>
         </>
     )
 };

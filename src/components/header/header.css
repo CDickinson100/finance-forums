@@ -3,11 +3,7 @@
     width: 20%;
 }
 
-.title {
+.header {
     border-style: solid;
     color:black;
-}
-
-#title {
-    float: left;
 }
