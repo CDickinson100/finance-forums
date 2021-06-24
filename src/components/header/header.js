@@ -53,7 +53,7 @@ export default function Header() {
                                     <img src={user.avatar} alt="avatar" />
                                 </div>
                             </button>
-                            {menu && <div className="menu">
+                            {menu && <div className="logout-menu">
                                 <button onClick={() => {
                                     localStorage.removeItem("token");
                                     window.location = "/";
