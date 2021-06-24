@@ -29,7 +29,7 @@ export default function Thread(props) {
     return thread.length === 1 && (
         <>
             <div className="menu">
-                <MenuSections/>
+                <MenuSections defaultCollapsed={true}/>
             </div>
             <div id="thread">
                 <h1>{thread[0].title}</h1>
