@@ -45,6 +45,10 @@
     border: solid;
     color: black;
     float: right;
-    width: 100%;
+    width: 150px;
     height: 100%;
+}
+
+#date {
+    font-size: 12px;
 }

@@ -25,7 +25,7 @@ function Forum1Home() {
                         </div>
 
                         <div id="iconBox2">
-                            <img src={reply} alt="" />
+                            <img id="replyImg" src={reply} alt="" />
                         </div>
 
                     </div>
