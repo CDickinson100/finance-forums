@@ -3,7 +3,6 @@ function HomeUI() {
         <>
             <div class="frame">
                 <div class="menu">
-
                 </div>
 
                 <div class="topics">
