@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import ReactMarkdown from 'react-markdown';
+import './Thread.css';
 
 export default function Thread(props) {
     const {id} = props.match.params;
