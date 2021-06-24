@@ -28,7 +28,7 @@ export default function ThreadList(props) {
     return (
         <>
             <div className="menu">
-                <MenuSections/>
+                <MenuSections defaultCollapsed={true}/>
             </div>
             <div className="Threads">
                 <div className="buttonCreate">

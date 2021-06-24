@@ -29,7 +29,7 @@ export default function HomeUI() {
         <>
             <div class="home">
                 <div class="menu">
-                    <MenuSections/>
+                    <MenuSections defaultCollapsed={false}/>
                 </div>
 
                 <div class="news">
