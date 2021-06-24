@@ -39,12 +39,16 @@ app.post('/registerUser', async function (request, response) {
         });
 });
 
-app.post('/createThread', async function (request, response) {
-    let token = request.body.token;
+/**
+ * Creates a thread with a title content and category
+ */
+app.get('/createThread', async function (request, response) {
+    let token = request.query.token;
     let id = loginTokens[token];
-    let title = request.body.title;
-    let content = request.body.content;
-    connection.query(`INSERT into threads (author, title, content, date) VALUES("` + id + `", "` + title + `", "` + content + `", "` + new Date() + `")`,
+    let title = request.query.title;
+    let content = request.query.content;
+    let category = request.query.category;
+    connection.query(`INSERT into threads (author, title, content, date, category) VALUES("` + id + `", "` + title + `", "` + content + `", "` + new Date() + `", ` + category + `)`,
         (error, results) => {
             if (error) console.log(error);
             response.status(200).json(results);
@@ -129,6 +133,7 @@ function createTables() {
         "author INT," +
         "title VARCHAR(255)," +
         "date VARCHAR(255)," +
+        "category INT," +
         "content LONGTEXT," +
         "primary key (id)" +
         ");"
