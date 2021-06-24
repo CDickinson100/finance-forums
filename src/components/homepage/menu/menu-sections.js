@@ -8,17 +8,17 @@ function MenuSections() {
         <>
             <BrowserRouter>
                 <div class="menuFrame">
-                    <div class={activeMenu === 0 ? 'active-section' : 'section'}>
+                    <div>
                         <Link to="">
-                            <button id="menuButton" onClick={() => setActiveMenu(0)}>
+                            <button onClick={() => setActiveMenu(0)} class={activeMenu === 0 ? 'active-section' : 'section'}>
                                 <h1>Home</h1>
                             </button>
                         </Link>
                     </div>
 
-                    <div class={activeMenu === 1 ? 'active-section' : 'section'}>
+                    <div>
                         <a href="/categories">
-                            <button id="menuButton" onClick={() => setActiveMenu(1)}>
+                            <button onClick={() => setActiveMenu(1)} class={activeMenu === 1 ? 'active-section' : 'section'}>
                                 <h1>Categories</h1>
                             </button>
                         </a>
@@ -26,16 +26,16 @@ function MenuSections() {
 
                     <div class="section">
                         <Link to="/topics">
-                            <button id="menuButton">
-                                <h1> Articles </h1>
+                            <button  onClick={() => setActiveMenu(2)} class={activeMenu === 2 ? 'active-section' : 'section'}>
+                                <h1>Articles</h1>
                             </button>
                         </Link>
                     </div>
 
                     <div class="section">
                         <Link to="/support">
-                            <button id="menuButton">
-                                <h1> Support </h1>
+                            <button  onClick={() => setActiveMenu(3)} class={activeMenu === 3 ? 'active-section' : 'section'}>
+                                <h1>Support</h1>
                             </button>
                         </Link>
                     </div>
