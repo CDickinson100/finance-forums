@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Categories.css'
 
 export default function Categories() {
 
