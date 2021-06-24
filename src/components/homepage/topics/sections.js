@@ -10,7 +10,7 @@ function Section() {
                 <Link to="/topic">
                     <div class="topicList">
 
-                        <div class="left">
+                        <div class="leftBox">
                             <div id="title">
                                 <h3>Title</h3>
                             </div>
@@ -20,7 +20,7 @@ function Section() {
                             </div>
                         </div>
 
-                        <div id="dataBox">
+                        <div id="rightBox">
                             <div id="date">
                                 <h4>Date</h4>
                             </div>

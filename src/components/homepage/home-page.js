@@ -15,7 +15,6 @@ function HomeUI() {
                         <Section />
                         <Section />
                         <Section />
-                        <Section />
 
                     </div>
 
