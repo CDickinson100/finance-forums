@@ -19,6 +19,7 @@ a button {
   font-size: 8px;
   text-align: left;
   padding-left: 30px;
+  cursor: pointer;
 }
 
 .indent {

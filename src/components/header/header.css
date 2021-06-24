@@ -49,7 +49,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .title h1 {
     padding: 0px;
-    margin: 0px 5px;
+    margin: 0px 15px;
     color: hsl(158, 91%, 55%);
     line-height: 50px;
 }

@@ -1,17 +1,18 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
-import './Threadlist.css'
+import './Threadlist.css';
 import MenuSections from "../homepage/menu/menu-sections";
+import '../../fonts/fonts.css';
 
 export default function ThreadList(props) {
-    const {id} = props.match.params;
+    const { id } = props.match.params;
 
     const [threads, setThreads] = useState([]);
 
     async function getThreads() {
         const requestOptions = {
             method: 'POST',
-            headers: {'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 'category': id
             })
@@ -28,18 +29,18 @@ export default function ThreadList(props) {
     return (
         <>
             <div className="menu">
-                <MenuSections defaultCollapsed={true}/>
+                <MenuSections defaultCollapsed={true} />
             </div>
-            <div className="Threads">
+            <div className="threads">
                 <div className="buttonCreate">
                     {localStorage.token &&
-                    <button onClick={() => window.location = "/create"}>
-                        Create Thread
-                    </button>
+                        <button onClick={() => window.location = "/create"}>
+                            <h1>Create Thread</h1>
+                        </button>
                     }
                 </div>
 
-                <center>
+                <div class={'allThreads'}>
                     {
                         threads.map((value) => {
                             return <div className="thread">
@@ -47,7 +48,7 @@ export default function ThreadList(props) {
                             </div>
                         })
                     }
-                </center>
+                </div>
             </div>
         </>
     )

@@ -1,33 +1,49 @@
 .thread {
-  width: 30%;
-  height: 60px;
+  width: 600px;
   background-color: hsl(283, 43%, 19%);
-  align-self: center;
   text-align: center;
-  border-radius: 6px;
-  color: #24f5a8;
-  text-decoration-line: none;
+  overflow-wrap: break-word;
+  margin: 40px;
 }
 
-.Threads button {
-  background-color: #04aa6d;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+.thread a {
+    color: #24f5a8;
+    text-decoration-line: none;
+}
+
+.thread h1 {
+    margin: 0px;
+    padding: 20px;
+    line-height: 60px;
+}
+
+.threads {
+    width: 100%;
+    z-index: 5;
+}
+
+.allThreads {
+    position: absolute;
+    left: 50%;
+    margin-left: -340px;
+}
+
+.threads button {
+  background-color: hsl(158, 91%, 55%);
+  color: hsl(283, 43%, 19%);
+  font-family: 'regular';
+  font-size: 8px;
   border: none;
   cursor: pointer;
-  width: 150px;
-  border-radius: 6px;
-}
-
-.name {
-  padding-top: 9px;
+  width: 250px;
+  text-align: left;
+  padding-left: 30px;
+  height: 60px;
 }
 
 .buttonCreate {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  top: 160px;
+  right: 40px;
+  border-left: solid 10px hsl(283, 43%, 19%);
+  position: fixed;
 }
