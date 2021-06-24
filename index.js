@@ -40,6 +40,18 @@ app.post('/registerUser', async function (request, response) {
 });
 
 /**
+ * Gets a list of threads from a category
+ */
+app.get('/getThreads', async function (request, response) {
+    let category = request.query.category;
+    connection.query(`SELECT * from threads where category = ` + category,
+        (error, results) => {
+            if (error) console.log(error);
+            response.status(200).json(results);
+        });
+});
+
+/**
  * Creates a thread with a title content and category
  */
 app.get('/createThread', async function (request, response) {
