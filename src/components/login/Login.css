@@ -1,39 +1,63 @@
-.login input {
-  width: 800px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
 .login button {
-  background-color: #04aa6d;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  position: absolute;
+  top: 685px;
+  background-color: #24f5a8;
+  color: hsl(283, 43%, 19%);
   border: none;
   cursor: pointer;
-  width: 150px;
-  border-radius: 6px;
+  width: 830px;
+  border-radius: 10px;
+  left: 50%;
+  margin-left: -415px;
+  height: 45px;
+  border-right: 10px solid hsl(283, 43%, 19%);
+  text-align: left;
+  padding: 15px;
 }
 
-.login button:hover {
-  opacity: 0.8;
+.login button h1 {
+    font-size: 12px;
+    font-family: 'regular';
+    margin: 0px;
 }
 
 #incorrect {
   color: red;
+  width: 800px;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  top: 740px;
 }
 
-.form {
-  text-align: center;
+.login input[type='text'],
+.login input[type='password'] {
+    width: 800px;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'light';
+    border: none;
+    outline: none;
+    margin-left: -415px;
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    background-color: rgb(240, 240, 240);
+    color: rgb(100, 100, 100);
 }
 
-.Button {
-  text-align: center;
+.login input[type='text'] {
+    top: 535px;
 }
 
-.login {
-    padding: 175px;
+.login input[type='password'] {
+    top: 610px;
+}
+
+#icon {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 200px;
 }

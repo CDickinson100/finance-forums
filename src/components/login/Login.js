@@ -10,7 +10,7 @@ export default function Login() {
         const password = document.getElementById('password').value;
         const requestOptions = {
             method: 'POST',
-            headers: {'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 'email': email,
                 'password': password
@@ -30,7 +30,7 @@ export default function Login() {
         const email = document.getElementById('email').value;
         const requestOptions = {
             method: 'POST',
-            headers: {'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 'email': email
             })
@@ -47,26 +47,16 @@ export default function Login() {
 
     return (
         <div className="login">
-
-            <br></br>
             <div className="form">
-            <img id="icon" src={defaultAvatar} alt="Avatar"/>
-            <br></br>
-            <br></br>
+                <img id="icon" src={defaultAvatar} alt="Avatar" />
+                <input type="text" onChange={changeAvatar} placeholder="Enter your email" id="email" name="email" required />
+                <input type="password" placeholder="Enter your password" id="password" name="password" required />
+            </div>
 
-            <label htmlFor="email"><b>Email</b></label>
-            <br></br>
-            <input type="text" onChange={changeAvatar} placeholder="Enter Email" id="email" name="email" required/>
-            <br></br>
-            <label htmlFor="password"><b>Password</b></label>
-            <br></br>
-            <input type="password" placeholder="Enter Password" id="password" name="password" required/>
-        </div>
-
-            <p id="incorrect"/>
+            <p id="incorrect" />
 
             <div className="Button">
-            <button type="submit" onClick={login}>Login</button>
+                <button type="submit" onClick={login}><h1>Login</h1></button>
             </div>
 
         </div>
