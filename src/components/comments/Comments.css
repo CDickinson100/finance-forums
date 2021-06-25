@@ -58,6 +58,10 @@
     
 }
 
+.comment {
+    margin-bottom: 12px;
+}
+
 .comments button h1 {
     text-align: left;
     margin: 0px;
