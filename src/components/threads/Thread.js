@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import MenuSections from "../homepage/menu/menu-sections";
 import Comments from "../comments/Comments";
+import './Thread.css';
 
 export default function Thread(props) {
     const { id } = props.match.params;

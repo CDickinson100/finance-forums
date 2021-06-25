@@ -1,0 +1,20 @@
+#thread {
+    position: absolute;
+    top: 139px;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+}
+
+#thread h1 {
+    height: 60px;
+    background-color: hsl(283, 43%, 19%);
+    text-align: center;
+    color: #24f5a8;
+    text-decoration-line: none;
+    line-height: 60px;
+}
+
+#thread textarea {
+    text-justify: distribute;
+}
