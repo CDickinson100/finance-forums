@@ -1,6 +1,6 @@
 .login button {
   position: absolute;
-  top: 685px;
+  top: 665px;
   background-color: #24f5a8;
   color: hsl(283, 43%, 19%);
   border: none;
@@ -48,11 +48,11 @@
 }
 
 .login input[type='text'] {
-    top: 535px;
+    top: 515px;
 }
 
 .login input[type='password'] {
-    top: 610px;
+    top: 590px;
 }
 
 #icon {
@@ -60,5 +60,5 @@
     position: absolute;
     left: 50%;
     margin-left: -150px;
-    top: 200px;
+    top: 180px;
 }

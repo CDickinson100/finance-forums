@@ -1,5 +1,5 @@
 .register button {
-    position: absolute;
+    position: fixed;
   background-color: #24f5a8;
   color: hsl(283, 43%, 19%);
   border: none;
@@ -10,6 +10,7 @@
   height: 45px;
   border-right: 10px solid hsl(283, 43%, 19%);
   padding: 15px;
+  top: 500px;
 }
 
 .register button h1 {
@@ -36,6 +37,7 @@
 
 .register input[type='text'],
 .register input[type='password'] {
+    position: fixed;
     width: 800px;
     margin-left: -415px;
     border-radius: 10px;
@@ -45,7 +47,22 @@
     color: rgb(100, 100, 100);
     font-family: 'light';
     padding: 15px;
-    margin-bottom: 20px;
+}
+
+.register #email {
+    top: 260px;
+}
+
+.register #firstName {
+    top: 320px;
+}
+
+.register #lastName {
+    top: 380px;
+}
+
+.register #password {
+    top: 440px;
 }
 
 .register h1 {
