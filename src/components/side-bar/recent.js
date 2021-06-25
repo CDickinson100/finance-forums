@@ -46,26 +46,31 @@ function RecentlyViewed() {
                             <text class="sidebarText">
                                 Help
                                 <br />
-                                Settings
-                                <br />
-                                Go Pro
-                                <br />
-                                Blog
+                                Careers
                                 <br />
                                 Advertise
+                                <br />
+                                Policies
                             </text>
                         </div>
                         <div class="lane2">
                             <text class="sidebarText">
-                                About
+                                Settings
                                 <br />
-                                Careers
+                                Go Pro
                                 <br />
                                 Press
                                 <br />
-                                Terms
+
+                            </text>
+                        </div>
+                        <div class="lane3">
+                            <text class="sidebarText">
+                                About
                                 <br />
-                                Policies
+                                Blog
+                                <br />
+                                Terms
                             </text>
                         </div>
                     </div>

@@ -39,6 +39,8 @@
     color: #24f5a8;
     text-decoration-line: none;
     line-height: 60px;
+    border-radius: 10px;
+    border-bottom: solid 10px hsl(158, 91%, 55%);
 }
 
 .sectionList {

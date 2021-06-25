@@ -13,6 +13,8 @@
     color: #24f5a8;
     text-decoration-line: none;
     line-height: 60px;
+    border-radius: 10px;
+    border-bottom: 10px solid #24f5a8;
 }
 
 #thread textarea {
