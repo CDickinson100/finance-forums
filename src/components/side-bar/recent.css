@@ -1,13 +1,17 @@
-.sidebar {
+.recent {
+  width: 250px;
+  position: fixed;
   height: 100%;
   display: block;
-  position: fixed;
-  right: 10px;
-  top: 111px;
+  right: 50px;
+  top: 149px;
+}
+
+.sidebar {
+  
 }
 
 .option {
-  width: 90%;
   text-align: left;
   cursor: pointer;
   margin-left: 10px;
@@ -16,26 +20,18 @@
 
 .extraOptions {
   display: flex;
-  float: right;
   position: fixed;
-  bottom: 20px;
-  font-size: larger;
+  margin-top: 30px;
+  width: 250px;
 }
 
 .lane1 {
-  position: relative;
-  display: flex;
-  float: right;
   width: 25%;
-  margin: auto;
   padding-left: 20px;
 }
 
 .lane2 {
-  position: relative;
-  display: flex;
-  width: 35%;
-  margin: 0 auto;
+  width: 25%;
   padding-left: 100px;
 }
 
@@ -46,18 +42,18 @@
 }
 
 #sideBarTitle h1 {
-  background-color: hsl(283, 43%, 19%);
-  color: hsl(158, 91%, 55%);
-  border-left: solid 10px hsl(158, 91%, 55%);
-  padding-left: 30px;
-  height: 60px;
-  width: 250px;
   font-family: "light";
   line-height: 60px;
+  text-align: left;
+  padding-left: 30px;
 }
 
 #sideBarTitle {
+  height: 60px;
+  width: 250px;
+  background-color: hsl(283, 43%, 19%);
+  color: hsl(158, 91%, 55%);
+  border-left: solid 10px hsl(158, 91%, 55%);
   display: block;
-  width: 100%;
   font-size: 8px;
 }

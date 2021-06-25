@@ -14,10 +14,22 @@
 .news {
     display: block;
     position: absolute;
-    width: 800px;
     top: 139px;
     left: 50%;
-    margin-left: -400px;
+}
+
+@media screen and (max-width: 1600px) {
+    .news {
+        width: 600px;
+        margin-left: -300px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .news {
+        width: 800px;
+        margin-left: -400px;
+    }
 }
 
 .news h1 {
@@ -25,7 +37,6 @@
     background-color: hsl(283, 43%, 19%);
     align-self: center;
     text-align: center;
-    border-radius: 6px;
     color: #24f5a8;
     text-decoration-line: none;
     line-height: 60px;

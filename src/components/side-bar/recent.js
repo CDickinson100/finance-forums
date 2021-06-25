@@ -6,8 +6,6 @@ function RecentlyViewed() {
         <>
             <div class="sidebar">
                 <div class="recent">
-                    <br />
-                    <br />
 
                     <div id="sideBarTitle">
                         <h1>
