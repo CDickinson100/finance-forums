@@ -34,7 +34,7 @@ export default function HomeUI() {
 
                 <div class="news">
                     {
-                        threads.map((value) => {
+                        threads.slice().reverse().map((value) => {
                             return <div>
                                 <h1>{value.title}</h1>
                                 <ReactMarkdown>{value.content}</ReactMarkdown>

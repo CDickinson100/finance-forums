@@ -41,7 +41,7 @@ export default function ThreadList(props) {
 
                 <div class={'allThreads'}>
                     {
-                        threads.map((value) => {
+                        threads.slice().reverse().map((value) => {
                             return <div className="thread">
                                 <a href={"/threads/" + value.id}><h1 className="name">{value.title}</h1></a>
                             </div>
