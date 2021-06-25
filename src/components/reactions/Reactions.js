@@ -38,7 +38,7 @@ export default function Reactions(props) {
         getReactions();
     }, [])
 
-    return localStorage.token && (
+    return localStorage.token ? (
         <div className="reaction">
             <button onClick={() => addReaction()}>
                 <img src={like} height="30px"/>
@@ -50,5 +50,5 @@ export default function Reactions(props) {
                 }
             </button>
         </div>
-    )
+    ):null;
 }
