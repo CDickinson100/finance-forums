@@ -1,22 +1,24 @@
 @media screen and (max-width: 1800px) { /* 270 px */
     .comments textarea,
-    .comments textarea:focus {
+    .comments textarea:focus,
+    .comments {
         width: 270px;
     }
 
-    .comments {
-        width: 270px;
+    .comments button {
+        width: 300px;
     }
 }
 
 @media screen and (min-width: 1800px) { /* 580 px */
     .comments textarea,
-    .comments textarea:focus {
-        width: 320px;
+    .comments textarea:focus,
+    .comments {
+        width: 370px;
     }
 
-    .comments {
-        width: 320px;
+    .comments button {
+        width: 400px;
     }
 }
 
@@ -46,12 +48,13 @@
     padding: 14px 20px;
     border: none;
     cursor: pointer;
-    width: 125px;
     margin: 8px 0 0px 0px;
     border-radius: 6px;
     font-family: 'regular';
     font-size: 8px;
     border-right: 6px solid hsl(283, 43%, 19%);
+    transition: 0.5s ease;
+    margin-bottom: 20px;
     
 }
 
@@ -61,15 +64,19 @@
 }
 
 .comment-author {
-    display: flex;
+    display: block;
     flex-direction: column;
-    margin-right: 25px;
+    height: 40px;
 }
 
 .comment-author img {
-    width: 80px;
+    width: 40px;
 }
 
 .comment-author h1 {
-    font-size: 20px;
+    position: absolute;
+    transform: translateY(50%);
+    display: inline-block;
+    font-size: 18px;
+    margin: 0px 10px;
 }

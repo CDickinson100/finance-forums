@@ -46,6 +46,11 @@ export default function Comments(props) {
 
     return (
         <div className="comments">
+            <textarea name="text" cols="65" rows="5" id="content" placeholder={'Please write your comment here...'} />
+
+            <button onClick={() => postComment()}>
+                <h1>send</h1>
+            </button>
             {
                 comments.map(value => {
                     return <div className="comment">
@@ -57,11 +62,6 @@ export default function Comments(props) {
                     </div>
                 })
             }
-            <textarea name="text" cols="65" rows="5" id="content" />
-
-            <button onClick={() => postComment()}>
-                <h1>send</h1>
-            </button>
         </div>
     )
 }

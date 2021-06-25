@@ -46,7 +46,7 @@ export default function Header() {
                 </a>
 
                 <div class="searchbar">
-                    <input type="search" id="search" name="search" placeholder="Search for Topics" />
+                    <input type="search" id="search" name="search" placeholder="Search for topics" />
                 </div>
 
                 <div class={user ? "notification" : "other-notification"}>
