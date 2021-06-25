@@ -1,0 +1,10 @@
+.reaction{
+    display: flex;
+    flex-direction: row;
+}
+
+.reaction button{
+    background-color: transparent;
+    border-style: none;
+    width: 100px;
+}
