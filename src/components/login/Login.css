@@ -21,13 +21,14 @@
     margin: 0px;
 }
 
-#incorrect {
+.login #incorrect {
   color: red;
   width: 800px;
   position: absolute;
   left: 50%;
   margin-left: -400px;
   top: 740px;
+  text-align: center;
 }
 
 .login input[type='text'],

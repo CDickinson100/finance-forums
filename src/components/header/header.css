@@ -66,7 +66,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .other-notification {
     margin-top: 26px;
     position: absolute;
-    right: 190px;
+    right: 198px;
     transform: translateY(50%);
 }
 
@@ -95,7 +95,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .profileActions {
-    margin-top: 35px;
+    margin-top: 38px;
     position: absolute;
     right: 50px;
     transform: translateY(50%);
@@ -124,12 +124,12 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .loginButton {
-    margin-right: 11px;
+    margin-right: 13px;
     color: hsl(158, 91%, 55%) !important;
 }
 
 .registerButton {
-    margin-left: 11px;
+    margin-left: 13px;
     color: hsl(158, 91%, 55%) !important;
 }
 

@@ -1,32 +1,51 @@
-.register input {
-  width: 800px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
 .register button {
-  background-color: #04aa6d;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+    position: absolute;
+  background-color: #24f5a8;
+  color: hsl(283, 43%, 19%);
   border: none;
   cursor: pointer;
-  width: 150px;
-  border-radius: 6px;
+  width: 830px;
+  border-radius: 10px;
+  margin-left: -415px;
+  height: 45px;
+  border-right: 10px solid hsl(283, 43%, 19%);
+  text-align: left;
+  padding: 15px;
+  font-family: 'regular';
 }
 
-.register button:hover {
-  opacity: 0.8;
+.register #incorrect {
+    color: red;
+    text-align: center;
+    width: 800px;
+    margin-left: -400px;
+    position: absolute;
+    top: 405px;
 }
 
-#incorrect {
-  color: red;
-  text-align: center;
+.register {
+    position: absolute;
+    left: 50%;
+    top: 180px;
 }
 
-.form {
-  text-align: center;
+.register input[type='text'],
+.register input[type='password'] {
+    width: 800px;
+    margin-left: -415px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(240, 240, 240);
+    color: rgb(100, 100, 100);
+    font-family: 'light';
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.register h1 {
+    text-align: center;
+    width: 800px;
+    margin-left: -400px;
+    font-family: 'regular';
 }
