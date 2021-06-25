@@ -19,7 +19,7 @@ const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'admin',
-    password: 'password1',
+    password: 'password',
     database: 'financeforums'
 });
 
