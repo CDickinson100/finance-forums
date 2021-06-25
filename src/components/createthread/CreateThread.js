@@ -30,7 +30,7 @@ export default function CreateThread() {
             })
         };
         const response = await fetch('/createThread', requestOptions);
-        window.location = "/";
+        window.location = "/threadList/"+category;
     }
 
     useState(() => {
