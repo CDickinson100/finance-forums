@@ -22,7 +22,7 @@ export default function Categories() {
         <>
             {
                 categories.filter(value => {
-                    return value.category_name !== "news";
+                    return value.id !== 1;
                 }).map((value) => {
                     return <div>
                         <a href={"/threadList/" + value.id}>
