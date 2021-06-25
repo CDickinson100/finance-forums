@@ -1,10 +1,16 @@
 .reaction{
-    display: flex;
-    flex-direction: row;
+    margin: 25px auto;
+    width: 80px;
+    left: 50%;
 }
 
 .reaction button{
     background-color: transparent;
     border-style: none;
-    width: 100px;
+}
+
+.reaction p {
+    position: absolute;
+    display: inline;
+    margin-left: 5px;
 }
