@@ -1,13 +1,35 @@
+@media screen and (max-width: 1800px) { /* 270 px */
+    .comments textarea,
+    .comments textarea:focus {
+        width: 270px;
+    }
+
+    .comments {
+        width: 270px;
+    }
+}
+
+@media screen and (min-width: 1800px) { /* 580 px */
+    .comments textarea,
+    .comments textarea:focus {
+        width: 320px;
+    }
+
+    .comments {
+        width: 320px;
+    }
+}
+
 .comments {
     position: fixed;
     top: 160px;
-    width: 270px;
     right: 80px;
+    transition: 0.5s ease;
 }
 
 .comments textarea,
 .comments textarea:focus {
-    width: 270px;
+    transition: 0.5s ease;
     border: none;
     background-color: rgb(240, 240, 240);
     color: rgb(100, 100, 100);
