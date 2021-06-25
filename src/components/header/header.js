@@ -64,7 +64,7 @@ export default function Header() {
                                 <button onClick={() => {
                                     localStorage.removeItem("token");
                                     window.location = "/";
-                                }}> Log Out
+                                }}><div class="point"></div> Log out
                                 </button>
                             </div>
                             }

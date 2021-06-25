@@ -108,19 +108,34 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .logout-menu {
     position: absolute;
-    right: 10px;
-    top: 105px;
+    right: 40px;
+    top: 86px;
 }
 
 .logout-menu button {
-    background-color: #04aa6d;
-    color: white;
+    background-color:hsl(158, 91%, 55%);
+    color: hsl(283, 43%, 19%);
+    font-family: 'regular';
+    font-size: 14px;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 150px;
     border-radius: 6px;
+    z-index: 8;
+}
+
+.logout-menu .point {
+    position: absolute;
+    right: 23px;
+    top: 0px;
+    background-color: hsl(158, 91%, 55%);
+    width: 25px;
+    height: 25px;
+    z-index: 7;
+    transform: rotate(45deg);
+    display: block;
 }
 
 .loginButton {
