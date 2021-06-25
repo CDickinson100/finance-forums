@@ -3,6 +3,7 @@
     top: 139px;
     left: 50%;
     transition: 0.5s ease;
+    word-wrap: break-word;
 }
 
 #thread h1 {
@@ -14,10 +15,6 @@
     line-height: 60px;
     border-radius: 10px;
     border-bottom: 10px solid #24f5a8;
-}
-
-#thread textarea {
-    text-justify: distribute;
 }
 
 @media screen and (max-width: 1600px) {

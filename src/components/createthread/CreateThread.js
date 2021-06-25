@@ -58,7 +58,7 @@ export default function CreateThread() {
                 <br />
                 <label htmlFor="content"><b>Content</b></label>
                 <br />
-                <textarea name="text" cols="100" rows="20" id="content" placeholder={'Enter content for the thread...'}>
+                <textarea name="text" cols="100" rows="20" id="content" placeholder={'Write content for the thread...'}>
                 </textarea>
             </div>
 

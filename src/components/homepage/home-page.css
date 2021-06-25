@@ -16,6 +16,7 @@
     position: absolute;
     top: 139px;
     left: 50%;
+    word-wrap: break-word;
 }
 
 @media screen and (max-width: 1600px) {
