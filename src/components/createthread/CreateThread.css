@@ -14,6 +14,7 @@
   text-align: left;
   padding-left: 20px;
   border-right: 10px solid hsl(283, 43%, 19%);
+  font-family: 'regular';
 }
 
 .Dropdown {
@@ -25,11 +26,13 @@
   height: 60px;
   background-color: #24f5a8;
   border-radius: 10px;
+  font-size: 8px;
 }
 
-.Dropdown label h3 {
+.Dropdown label h1 {
+    color: hsl(283, 43%, 19%);
     position: absolute;
-    font-family: 'light';
+    font-family: 'regular';
     line-height: 60px;
     margin: 0px;
     left: 20px;

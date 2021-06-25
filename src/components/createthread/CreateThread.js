@@ -41,7 +41,7 @@ export default function CreateThread() {
         <div className="createThread">
             <div className="form">
                 <div className="Dropdown">
-                    <label htmlFor="categories"><h3>Thread category:</h3></label>
+                    <label htmlFor="categories"><h1>Thread category:</h1></label>
                     <select name="categories" id="categories">
                         {categories.map(value => {
                             return <option value={value.id}>{value.category_name}</option>
