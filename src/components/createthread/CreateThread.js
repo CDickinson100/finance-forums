@@ -40,9 +40,8 @@ export default function CreateThread() {
     return (
         <div className="createThread">
             <div className="form">
-                <br></br>
                 <div className="Dropdown">
-                    <label htmlFor="categories">Thread category:</label>
+                    <label htmlFor="categories"><h3>Thread category:</h3></label>
                     <select name="categories" id="categories">
                         {categories.map(value => {
                             return <option value={value.id}>{value.category_name}</option>
@@ -50,20 +49,14 @@ export default function CreateThread() {
                     </select>
                 </div>
                 <div className="titlebox">
-                    <br></br>
-                    <label htmlFor="title"><b>Title</b></label>
-                    <br></br>
                     <input type="text" placeholder="Enter a title" id="titlebox" name="titlebox" required />
                 </div>
-                <br />
-                <label htmlFor="content"><b>Content</b></label>
-                <br />
                 <textarea name="text" cols="100" rows="20" id="content" placeholder={'Write content for the thread...'}>
                 </textarea>
             </div>
 
             <div className="Button">
-                <button type="submit" onClick={createThread}>Create Thread</button>
+                <button type="submit" onClick={createThread}><h1>Create thread</h1></button>
             </div>
         </div>
     )

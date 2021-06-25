@@ -1,56 +1,95 @@
-.createThread input {
-  width: 800px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-#titlebox {
-  width: 500px !important;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
 .createThread button {
-  background-color: #04aa6d;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  background-color: #24f5a8;
+  color: hsl(283, 43%, 19%);
   border: none;
   cursor: pointer;
-  width: 150px;
-  border-radius: 6px;
-}
-
-a {
-  color: #24f5a8;
-  text-decoration: none;
-}
-
-.createThread button:hover {
-  opacity: 0.8;
-}
-
-.form {
-  text-align: center;
-}
-
-.Button {
-  text-align: center;
+  border-radius: 10px;
+  top: 665px;
+  position: absolute;
+  left: 50%;
+  margin-left: -415px;
+  width: 830px;
+  height: 60px;
+  font-size: 8px;
+  text-align: left;
+  padding-left: 20px;
+  border-right: 10px solid hsl(283, 43%, 19%);
 }
 
 .Dropdown {
-
+  top: 215px;
+  position: absolute;
+  left: 50%;
+  margin-left: -415px;
+  width: 830px;
+  height: 60px;
+  background-color: #24f5a8;
+  border-radius: 10px;
 }
 
+.Dropdown label h3 {
+    position: absolute;
+    font-family: 'light';
+    line-height: 60px;
+    margin: 0px;
+    left: 20px;
+}
+
+.Dropdown select,
+.Dropdown select:focus {
+    font-family: 'regular';
+    position: absolute;
+    right: 0px;
+    height: 60px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 30px;
+    background-color: hsl(283, 43%, 19%);
+    color: #24f5a8;
+    appearance: none;
+}
+
+.Dropdown option,
+.Dropdown option:focus {
+    border: none;
+    outline: none;
+    margin: 100px;
+}
 
 .createThread {
     width: 100%;
     padding-top: 200px;
     position: absolute;
+}
+
+#titlebox {
+    top: 300px;
+    position: absolute;
+    left: 50%;
+    margin-left: -415px;
+    width: 800px;
+}
+
+.form textarea {
+    top: 370px;
+    position: absolute;
+    left: 50%;
+    margin-left: -415px;
+    width: 800px;
+    height: 240px;
+}
+
+.form textarea, 
+.titlebox input[type='text'] {
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'light';
+    outline: none;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    color: rgb(100, 100, 100);
+    appearance: none;
 }

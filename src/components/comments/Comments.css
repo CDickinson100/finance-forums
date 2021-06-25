@@ -49,10 +49,10 @@
     border: none;
     cursor: pointer;
     margin: 8px 0 0px 0px;
-    border-radius: 6px;
+    border-radius: 10px;
     font-family: 'regular';
     font-size: 8px;
-    border-right: 6px solid hsl(283, 43%, 19%);
+    border-right: 10px solid hsl(283, 43%, 19%);
     transition: 0.5s ease;
     margin-bottom: 20px;
     

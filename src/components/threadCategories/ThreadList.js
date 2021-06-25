@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 import './Threadlist.css';
 import MenuSections from "../homepage/menu/menu-sections";
-import '../../fonts/fonts.css';
 
 export default function ThreadList(props) {
     const { id } = props.match.params;
