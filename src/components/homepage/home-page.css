@@ -6,17 +6,18 @@
 
 .menu {
     left: 50px;
-    top: 160px;
+    top: 155px;
     position: fixed;
     z-index: 10;
 }
 
 .news {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 57.5%;
-    min-height: 600px;
+    display: block;
+    position: absolute;
+    width: 800px;
+    top: 139px;
+    left: 50%;
+    margin-left: -400px;
 }
 
 .news h1 {
@@ -27,6 +28,7 @@
     border-radius: 6px;
     color: #24f5a8;
     text-decoration-line: none;
+    line-height: 60px;
 }
 
 .sectionList {

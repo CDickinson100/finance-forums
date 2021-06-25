@@ -1,9 +1,27 @@
 .thread {
-  width: 600px;
   background-color: hsl(283, 43%, 19%);
   text-align: center;
   overflow-wrap: break-word;
-  margin: 40px;
+  margin-bottom: 40px;
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 1600px) {
+    .thread {
+        width: 600px;
+    }
+    .allThreads {
+        margin-left: -300px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .thread {
+        width: 800px;
+    }
+    .allThreads {
+        margin-left: -400px;
+    }
 }
 
 .thread a {
@@ -24,8 +42,9 @@
 
 .allThreads {
     position: absolute;
+    top: 160px;
     left: 50%;
-    margin-left: -340px;
+    transition: 0.5s ease;
 }
 
 .threads button {
