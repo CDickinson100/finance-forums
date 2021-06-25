@@ -40,7 +40,7 @@ export default function Register() {
 
 
             <div className="Button">
-                <button type="submit" onClick={create}>Create Account</button>
+                <button type="submit" onClick={create}><h1>Create account</h1></button>
             </div>
 
             <p id="incorrect" />

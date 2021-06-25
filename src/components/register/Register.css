@@ -9,9 +9,14 @@
   margin-left: -415px;
   height: 45px;
   border-right: 10px solid hsl(283, 43%, 19%);
-  text-align: left;
   padding: 15px;
-  font-family: 'regular';
+}
+
+.register button h1 {
+    text-align: left;
+    font-size: 12px;
+    font-family: 'regular';
+    margin: 0px;
 }
 
 .register #incorrect {
