@@ -15,6 +15,7 @@ function MenuSections(props) {
                         <a href='/'>
                             <button onClick={() => setActiveMenu(0)}
                                 class={activeMenu === 0 ? 'active-section' : 'section'}>
+                                <div class={'bar'} />
                                 <h1>Home</h1>
                             </button>
                         </a>
@@ -26,6 +27,7 @@ function MenuSections(props) {
                                 setActiveMenu(1);
                                 setShow(!showCategories)
                             }} class={activeMenu === 1 ? 'active-section' : 'section'}>
+                                <div class={'bar'} />
                                 <h1>Categories</h1>
                             </button>
                         </a>
@@ -39,6 +41,7 @@ function MenuSections(props) {
                         <a href="/topics">
                             <button onClick={() => setActiveMenu(2)}
                                 class={activeMenu === 2 ? 'active-section' : 'section'}>
+                                <div class={'bar'} />
                                 <h1>Articles</h1>
                             </button>
                         </a>
@@ -48,6 +51,7 @@ function MenuSections(props) {
                         <a href="/support">
                             <button onClick={() => setActiveMenu(3)}
                                 class={activeMenu === 3 ? 'active-section' : 'section'}>
+                                <div class={'bar'} />
                                 <h1>Support</h1>
                             </button>
                         </a>

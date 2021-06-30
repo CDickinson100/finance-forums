@@ -1,28 +1,49 @@
-.active-section {
+.menuFrame .active-section {
   color: #ff435f;
-  border-left: solid 10px #ff435f;
-  background-color: hsl(283, 43%, 19%);
 }
 
-.section {
+.menuFrame .section {
   color: hsl(158, 91%, 55%);
-  border-left: solid 10px hsl(158, 91%, 55%);
 }
 
-a button {
-  margin: 5px 0px;
-  height: 60px;
+.menuFrame a button {
+  height: 40px;
   border: none;
-  width: 250px;
-  background-color: hsl(283, 43%, 19%);
-  font-family: "light";
-  font-size: 8px;
+  width: 140px;
+  background-color: rgba(255, 255, 255, 0);
   text-align: left;
-  padding-left: 30px;
   cursor: pointer;
-  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-.indent {
+.menuFrame .indent {
     margin-left: 30px;
 }
+
+.menuFrame .bar {
+    height: 40px;
+    border-radius: 10px;
+    width: 10px;
+    background-color: hsl(158, 91%, 55%);
+    display: inline-block;
+    position: absolute;
+}
+
+.menuFrame .section h1, .menuFrame .active-section h1 {
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    font-family: "regular";
+    font-size: 16px;
+    padding-left: 25px;
+    margin: 0px;
+    position: absolute;
+}
+
+.menuFrame .section .bar {
+    background-color: hsl(158, 91%, 55%);
+}
+
+ .menuFrame .active-section .bar {
+    background-color: #ff435f;
+ }
