@@ -6,14 +6,11 @@
   color: hsl(158, 91%, 55%);
 }
 
-.menuFrame a button {
-  height: 40px;
+.menuFrame button {
   border: none;
-  width: 140px;
   background-color: rgba(255, 255, 255, 0);
   text-align: left;
   cursor: pointer;
-  margin-bottom: 15px;
 }
 
 .menuFrame .indent {
@@ -32,12 +29,10 @@
 .menuFrame .section h1, .menuFrame .active-section h1 {
     display: inline-block;
     line-height: 40px;
-    height: 40px;
     font-family: "regular";
     font-size: 16px;
     padding-left: 25px;
     margin: 0px;
-    position: absolute;
 }
 
 .menuFrame .section .bar {
@@ -46,4 +41,8 @@
 
  .menuFrame .active-section .bar {
     background-color: #ff435f;
+ }
+
+ .menuFrame {
+     position: absolute;
  }
