@@ -1,16 +1,22 @@
 .menuFrame .active-section {
-  color: #ff435f;
+  background-color: rgba(57, 28, 69, 0.15);
+  color: rgb(57, 28, 69);
 }
 
 .menuFrame .section {
-  color: hsl(158, 91%, 55%);
+  background-color: rgba(36, 245, 168, 0.15);
+  color: rgb(36, 245, 168);
 }
 
 .menuFrame button {
   border: none;
-  background-color: rgba(255, 255, 255, 0);
   text-align: left;
   cursor: pointer;
+  margin-bottom: 10px;
+  padding: 0px;
+  width: 200px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .menuFrame .indent {
@@ -24,14 +30,15 @@
     background-color: hsl(158, 91%, 55%);
     display: inline-block;
     position: absolute;
+    left: -6px;
 }
 
 .menuFrame .section h1, .menuFrame .active-section h1 {
     display: inline-block;
     line-height: 40px;
-    font-family: "regular";
+    font-family: "medium";
     font-size: 16px;
-    padding-left: 25px;
+    padding-left: 20px;
     margin: 0px;
 }
 
@@ -40,7 +47,7 @@
 }
 
  .menuFrame .active-section .bar {
-    background-color: #ff435f;
+    background-color: rgb(57, 28, 69);
  }
 
  .menuFrame {

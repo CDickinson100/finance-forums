@@ -1,5 +1,5 @@
 import bellIcon from '../../icons/bell.svg';
-import iress from '../../icons/iress-purple.svg';
+import iress from '../../icons/iress-purple.png';
 import "./header.css";
 import { useEffect, useState } from "react";
 
